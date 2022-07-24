@@ -1,0 +1,38 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  lab
+* Top Cell Name: min_pdp
+* View Name:     schematic
+* Netlisted on:  May 11 17:27:29 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: lab
+* Cell Name:    min_pdp
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT min_pdp A B GND VDD vout
+*.PININFO A:I B:I GND:I VDD:I vout:O
+MM5 vout net3 GND GND n_18 W='size' L=180n
+MM1 net3 B net8 GND n_18 W=2.5u L=180n
+MM0 net8 A GND GND n_18 W=2.5u L=180n
+MM4 vout net3 VDD VDD p_18 W='2*size' L=180n
+MM3 net3 B VDD VDD p_18 W=2.5u L=180n
+MM2 net3 A VDD VDD p_18 W=2.5u L=180n
+.ENDS
+

@@ -1,0 +1,20 @@
+path_delay_4 1000
+SOFTCHK PSUB LOWER.
+1 1 2 Apr 13 16:42:31 2022                                                      
+Net VDD is selected for stamping.
+Rejected nets: 1 2 6 GND 9
+p 1 10
+CN path_delay_4 c 1 0 0 1 0 0
+DN VDD
+-20405 -9295
+6825 -9295
+6825 9140
+-4435 9140
+-4435 -2130
+-18325 -2130
+-18325 8140
+-4435 8140
+-4435 9140
+-20405 9140
+SOFTCHK WEL LOWER.
+0 0 0 Apr 13 16:42:31 2022                                                      

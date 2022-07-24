@@ -1,0 +1,4 @@
+SOFTINCLUDE /cad/cadence/IC/IC_06.16.110_lnx86/share/cdssetup/cds.lib
+#Removed by ddDeleteObj: DEFINE lab1 /home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/schematics/lab1
+#Removed by ddDeleteObj: DEFINE lab2 /home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/schematics/lab2
+DEFINE lab /home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/schematics/lab

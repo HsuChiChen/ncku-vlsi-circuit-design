@@ -1,0 +1,82 @@
+\o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 04/25/2019 21:39 (ip-172-18-22-60) $
+\o Sub version:		sub-version  s032 
+\o Arguments:		-unmapped -mpssession virtuoso71886 -mpshost cic-svr 
+\o Working Directory:	cic-svr:/home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/schematics
+\o 64-bit offsets
+\o Qt version: 		5.9.1
+\o changeWorkingDir("/home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/schematics") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o Log file is "/home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/schematics/libManager.log".
+\o Opening libManager window.
+\a nrSetWindowVisibility(cdsLibManager "show")
+\o MPS service: map window
+\o Library Manager customization server connected.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(601 144 600 448))
+\a cdsLibManager->libListBox->value = "ahdlLib"
+\a cdsLibManager->libLineEdit->value = "ahdlLib"
+\a cdsLibManager->libListBox->value = "analogLib"
+\a cdsLibManager->libLineEdit->value = "analogLib"
+\a cdsLibManager->libListBox->value = "basic"
+\a cdsLibManager->libLineEdit->value = "basic"
+\a cdsLibManager->libListBox->value = "lab"
+\a cdsLibManager->libLineEdit->value = "lab"
+\a cdsLibManager->cellListBox->value = "d_latch"
+\a cdsLibManager->cellLineEdit->value = "d_latch"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "delay_flip_flop"
+\a cdsLibManager->cellLineEdit->value = "delay_flip_flop"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "delay_flip_flop"
+\a cdsLibManager->cellLineEdit->value = "delay_flip_flop"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 7 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "lab"
+\a cdsLibManager->libLineEdit->value = "lab"
+\a cdsLibManager->cellListBox->value = "delay_flip_flop"
+\a cdsLibManager->cellLineEdit->value = "delay_flip_flop"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = "lab"
+\a cdsLibManager->libLineEdit->value = "lab"
+\a cdsLibManager->cellListBox->value = "delay_flip_flop"
+\a cdsLibManager->cellLineEdit->value = "delay_flip_flop"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\o MPS service: shutdown
+\o libManager is exiting.
+\a exit(0)

@@ -1,0 +1,7 @@
+.SUBCKT vco vin GND VDD vout vctrl vctrl_b
+*.PININFO vin:I GND:I VDD:I vout:O
+MM1 net1 vctrl   VDD  VDD p_18 W=6u L=180.00n
+MM2 vout vin     net1 VDD p_18 W=0.45u L=180.00n
+MM3 vout vin     net2 GND n_18 W=0.25u L=180.00n
+MM4 net2 vctrl_b GND  GND n_18 W=2u L=180.00n
+.ENDS

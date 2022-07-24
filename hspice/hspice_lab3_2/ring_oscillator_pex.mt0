@@ -1,0 +1,6 @@
+$DATA1 SOURCE='PrimeSim HSPICE' VERSION='R-2020.12-SP2 linux64' PARAM_COUNT=0
+.TITLE '**testbench**'
+ period           frequency        t_on             duty_cycle      
+ temper           alter#          
+  3.231e-10        3.095e+09        1.618e-10          0.5008       
+   25.0000        1               

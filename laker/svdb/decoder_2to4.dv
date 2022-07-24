@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/decoder_2to4.dv
+dv_start matched                                  
+dv_cell {decoder_2to4} {decoder_2to4} matched
+dv_obj_count -transformed_nets {12 12} -transformed_inst {7 7} -transformed_port {9 9}
+dv_end

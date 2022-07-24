@@ -1,0 +1,45 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  lab
+* Top Cell Name: pseudo_nmos
+* View Name:     schematic
+* Netlisted on:  May 26 17:58:48 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: lab
+* Cell Name:    pseudo_nmos
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT pseudo_nmos A B C D E F GND VDD Y
+*.PININFO A:I B:I C:I D:I E:I F:I GND:I VDD:I Y:O
+MM11 net3 GND VDD VDD p_18 W=680n L=180.00n
+MM10 net2 GND VDD VDD p_18 W=680n L=180.00n
+MM1 Y GND VDD VDD p_18 W=1.91u L=180.00n
+MM0 net1 GND VDD VDD p_18 W=680n L=180.00n
+MM13 net_024 F GND GND n_18 W=2.7u L=180.00n
+MM12 net3 E net_024 GND n_18 W=2.7u L=180.00n
+MM8 net_025 D GND GND n_18 W=2.7u L=180.00n
+MM9 net2 C net_025 GND n_18 W=2.7u L=180.00n
+MM7 Y net3 GND GND n_18 W=3.82u L=180.00n
+MM6 Y net2 GND GND n_18 W=3.82u L=180.00n
+MM5 Y net1 GND GND n_18 W=3.82u L=180.00n
+MM4 net1 A net026 GND n_18 W=2.7u L=180.00n
+MM3 net026 B GND GND n_18 W=2.7u L=180.00n
+.ENDS
+

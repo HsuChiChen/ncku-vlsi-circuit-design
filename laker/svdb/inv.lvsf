@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/laker
+lvs_LvsfVersion 2
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {3 0 0 0}
+lvs_LvsOutFile LVS_REPORT inv.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST /home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/hspice/lab1_1a/inv.cir
+lvs_LvsOutFile RULES_FILE /home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/laker/_Rule.lvs_
+lvs_LvsRunTimes 1648020325 1648020325

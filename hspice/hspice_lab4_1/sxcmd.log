@@ -1,0 +1,135 @@
+### Custom WaveView ADV log file, revision R-2020.12 (build Nov 24, ) ###
+### created at 14:43:49 on Tue May 31 2022 (Linux AMD64) ###
+### Host Name: cic-svr   User ID: vlsisj2022063   PID: 80240   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) SW_SX_PERL_LIB defined
+# (0) SW_SX_TCL_LIB defined
+# (0) HOME defined
+wv_move_window {Custom WaveView} {} 0 25
+wv_select_window {Custom WaveView} 
+wv_resize_window {Custom WaveView} 1910 935
+wv_press_tool_button {Custom WaveView} {} {OpenWaveform0} 
+wv_move_window {FileDialog} {} 762 227
+wv_move_window {FileDialog} {} 762 232
+wv_select_dialog {FileDialog} 
+wv_select_list_item {FileDialog} {} {FileList} {charge_sharing.tr0} 5
+wv_dclick_list_item {FileDialog} {} {FileList} {charge_sharing.tr0} 5
+wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:charge_sharing.tr0(0)} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:charge_sharing.tr0(0)@toplevel(0)} {0} {+sep=@}
+wv_select_list_item {Custom WaveView} {} {sigview} {i(vb)} 1
+wv_select_list_item {Custom WaveView} {} {sigview} {i(va)} 0
+wv_select_list_item {Custom WaveView} {} {sigview} {i(vd)} 4
+wv_drag_list_item {Custom WaveView} {} {sigview} {i(vb)} 1
+wv_drag_enter WV1
+wv_drop_on WV1
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_drag_item_to WV1 46 116
+wv_drag_enter WV1
+wv_drag_to WV1 46 106
+wv_drop_on WV1
+wv_drag_item_to WV1 46 111
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_drag_item_to WV1 33 10
+wv_drag_enter WV1
+wv_drop_on WV1
+wv_drag_item_to WV1 33 10
+wv_press_key Delete 337 240
+wv_move_window {Confirmation} {} 861 432
+wv_move_window {Confirmation} {} 860 437
+wv_select_dialog {Confirmation} 
+wv_press_button {Confirmation} {} {Cancel} 
+wv_select_list_item {Custom WaveView} {} {sigview} {i(va)} 0
+wv_drag_list_item {Custom WaveView} {} {sigview} {i(va)} 0
+wv_drag_enter WV1
+wv_drag_leave WV1
+wv_select_list_item {Custom WaveView} {} {sigview} {v(a)} 7
+wv_drag_list_item {Custom WaveView} {} {sigview} {v(a)} 7
+wv_drag_enter WV1
+wv_drop_on WV1
+wv_select_list_item {Custom WaveView} {} {sigview} {v(b)} 8
+wv_drag_list_item {Custom WaveView} {} {sigview} {v(b)} 8
+wv_drag_enter WV1
+wv_drag_to WV1 48 552
+wv_drop_on WV1
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.LINE2
+wv_select_line WV1.PANEL1:1.LINE2
+wv_press_key Delete 308 204
+wv_select_dialog {Confirmation} 
+wv_press_button {Confirmation} {} {Ok} 
+wv_select_list_item {Custom WaveView} {} {sigview} {v(b)} 8
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(b)} 8
+wv_select_list_item {Custom WaveView} {} {sigview} {v(c)} 9
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(c)} 9
+wv_select_list_item {Custom WaveView} {} {sigview} {v(clk)} 10
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(clk)} 10
+wv_select_list_item {Custom WaveView} {} {sigview} {v(d)} 11
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(d)} 11
+wv_select_list_item {Custom WaveView} {} {sigview} {v(vdd)} 12
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(vdd)} 12
+wv_select_list_item {Custom WaveView} {} {sigview} {v(y)} 13
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(y)} 13
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL5:1.LEGEND
+wv_drag_item_to WV1 58 451
+wv_drag_enter WV1
+wv_drag_to WV1 61 432
+wv_drag_to WV1 65 409
+wv_drag_to WV1 65 405
+wv_drop_on WV1
+wv_drag_item_to WV1 58 451
+wv_press_key Ctrl_Z 311 616
+wv_press_key Esc 297 536
+wv_press_key "u" 297 536
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL5:1.LEGEND
+wv_select_panel WV1.PANEL5:1.LEGEND
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL5:1.LEGEND
+wv_drag_item_to WV1 23 455
+wv_drag_enter WV1
+wv_drag_to WV1 13 437
+wv_drag_leave WV1
+wv_drag_enter WV1
+wv_drag_to WV1 0 319
+wv_drag_to WV1 0 318
+wv_drag_to WV1 8 309
+wv_drag_to WV1 8 311
+wv_drop_on WV1
+wv_drag_item_to WV1 16 444
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL5:1.LEGEND
+wv_drag_item_to WV1 49 451
+wv_drag_enter WV1
+wv_drag_to WV1 49 442
+wv_drag_to WV1 49 400
+wv_drag_to WV1 41 314
+wv_drag_to WV1 41 293
+wv_drag_to WV1 42 219
+wv_drag_to WV1 42 209
+wv_drag_to WV1 44 120
+wv_drag_to WV1 44 109
+wv_drag_to WV1 54 22
+wv_drop_on WV1
+wv_drag_item_to WV1 49 446
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL4:1.LEGEND
+wv_select_panel WV1.PANEL4:1.LEGEND
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL6:1.LEGEND
+wv_select_panel WV1.PANEL6:1.LEGEND
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL7:1.LEGEND
+wv_select_panel WV1.PANEL7:1.LEGEND
+wv_select_list_item {Custom WaveView} {} {sigview} {v(0)} 6
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(0)} 6
+wv_select_window {Custom WaveView} 
+wv_close_window {Custom WaveView} 
+wv_move_window {Confirmation} {} 865 432
+wv_move_window {Confirmation} {} 865 437
+wv_select_dialog {Confirmation} 
+#wv_press_button {Confirmation} {} {Ok} 
+#*WARNING* Can not remove '/home/ncku_class/vlsisj2022/vlsisj2022063/.cx_hostport/.cx_hostport_cic-svr_80240'.

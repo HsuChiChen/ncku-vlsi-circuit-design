@@ -1,0 +1,12 @@
+Command Line: /usr/cad/synopsys/laker/cur/platform/LINUX64/bin/laker
+uname(Linux tsri06 2.6.32-642.el6.x86_64 #1 SMP Tue May 10 17:27:01 UTC 2016 x86_64)
+source /usr/cad/synopsys/laker/cur/gift/gift.tcl
+wtAskUser: "/home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/report_file/lab4_2/pseudo_nmos.gds exists. Overwrite it anyway?", answer:  "Yes"
+Transferring library (lab) to GDSII (/home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/report_file/lab4_2/pseudo_nmos.gds) ...
+	Please wait a moment...
+lakerExportStream -file /home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/laker/ -lib lab -topCell {pseudo_nmos} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+au time 182.664661 7.023932 10.217446 delta 45043712 45043712 total 394342400 394342400

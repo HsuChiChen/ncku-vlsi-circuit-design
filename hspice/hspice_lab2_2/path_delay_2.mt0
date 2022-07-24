@@ -1,0 +1,6 @@
+$DATA1 SOURCE='PrimeSim HSPICE' VERSION='R-2020.12-SP2 linux64' PARAM_COUNT=0
+.TITLE '**testbench**'
+ tdelay_rise      tdelay_fall      tdelay_avg       temper          
+ alter#          
+  3.956e-10        6.361e-10        5.159e-10         25.0000       
+1               

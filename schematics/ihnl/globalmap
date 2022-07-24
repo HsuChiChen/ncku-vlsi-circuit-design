@@ -1,0 +1,8 @@
+CADENCE IHNL11140
+$model
+lab/delay_flip_flop/schematic delay_flip_flop
+$endmodel
+$net
+$endnet
+$param
+$endparam

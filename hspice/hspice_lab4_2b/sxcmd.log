@@ -1,0 +1,48 @@
+### Custom WaveView ADV log file, revision R-2020.12 (build Nov 24, ) ###
+### created at 01:29:08 on Wed Jun  1 2022 (Linux AMD64) ###
+### Host Name: cic-svr   User ID: vlsisj2022063   PID: 15532   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) SW_SX_PERL_LIB defined
+# (0) SW_SX_TCL_LIB defined
+# (0) HOME defined
+wv_move_window {Custom WaveView} {} 2 69
+wv_select_window {Custom WaveView} 
+wv_move_window {Custom WaveView} {} -1 25
+wv_press_tool_button {Custom WaveView} {} {OpenWaveform0} 
+wv_move_window {FileDialog} {} 441 53
+wv_move_window {FileDialog} {} 443 75
+wv_select_dialog {FileDialog} 
+wv_move_scrollbar {FileDialog} {} {FileList.HScrollBar} {251}
+wv_select_list_item {FileDialog} {} {FileList} {static_cmos.tr0} 23
+wv_dclick_list_item {FileDialog} {} {FileList} {static_cmos.tr0} 23
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:static_cmos.tr0(0)} {0} {+sep=@}
+wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:static_cmos.tr0(0)} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:static_cmos.tr0(0)} {0} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:static_cmos.tr0(0)@toplevel(0)} {0} {+sep=@}
+wv_select_list_item {Custom WaveView} {} {sigview} {v(f)} 13
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(f)} 13
+wv_select_list_item {Custom WaveView} {} {sigview} {v(y)} 17
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(y)} 17
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL1:1 9.67742e-08 1.84472
+wv_drag_item_to WV1 170 24
+wv_zoom WV1.PANEL1:1 9.67742e-08 1.84472 1.40553e-07 -1.11801
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL1:1 1.19281e-07 1.86013
+wv_drag_item_to WV1 533 26
+wv_zoom WV1.PANEL1:1 1.19281e-07 1.86013 1.21746e-07 -0.22605
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.XAXIS1
+wv_drag_item_to WV1 358 20
+wv_zoom_x WV1.PANEL1:1 1.19933e-07 1.2061e-07
+wv_select_menu_item {Custom WaveView} {} {AxisCursor.Add Cursor} 
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.CURSOR1
+wv_drag_item_to WV1 592 119
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 334 129
+wv_select_menu_item {Custom WaveView} {} {AxisCursor.Add Cursor} 
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.CURSOR2
+wv_drag_item_to WV1 594 158
+wv_move_wv_item WV1.PANEL1:1.CURSOR2 559 176

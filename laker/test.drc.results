@@ -1,0 +1,129 @@
+test 1000
+NW.S1
+1 1 2 Mar 23 17:35:23 2022                     
+Rule File Pathname: /home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/laker/_rule.drc_
+Minimum N-Well N-Well spacing for equal-potential is 1.6
+p 1 8
+CN test c 1 0 0 1 0 0 0
+-420 2485
+885 2485
+885 1721
+914 2503
+2250 3320
+945 3320
+945 4084
+916 3302
+NW.S2.18
+1 1 2 Mar 23 17:35:23 2022                     
+Rule File Pathname: /home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/laker/_rule.drc_
+Minium N-Well to N-Well spacing of non-potential(1.8V device) = 1.5
+p 1 8
+CN test c 1 0 0 1 0 0 0
+-301 2485
+885 2485
+885 1821
+912 2503
+2131 3320
+945 3320
+945 3984
+918 3302
+NIMP.S1
+1 1 2 Mar 23 17:35:23 2022                     
+Rule File Pathname: /home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/laker/_rule.drc_
+Minimum space between two NPlus regions is 0.45um
+p 1 4
+CN test c 1 0 0 1 0 0 0
+3480 -6915
+3875 -6915
+3875 -6015
+3480 -6015
+PIMP.S1
+1 1 2 Mar 23 17:35:23 2022                     
+Rule File Pathname: /home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/laker/_rule.drc_
+Minimum space between two PIMP regions is 0.45um
+p 1 4
+CN test c 1 0 0 1 0 0 0
+3480 -4810
+3875 -4810
+3875 -3410
+3480 -3410
+CONT.O1
+1 1 2 Mar 23 17:35:23 2022                     
+Rule File Pathname: /home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/laker/_rule.drc_
+Minimum Poly overlap contact is 0.12um, no floating conntact
+p 1 4
+CN test c 1 0 0 1 0 0 0
+1602 3195
+1650 3085
+1880 3085
+1928 3195
+ME1.O1
+2 2 2 Mar 23 17:35:23 2022                     
+Rule File Pathname: /home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/laker/_rule.drc_
+Minimum Metal1 overlap contac is 0um, no contact outside Metal1
+p 1 4
+CN test c 1 0 0 1 0 0 0
+-1050 -1840
+-820 -1840
+-820 -1830
+-1050 -1830
+p 2 4
+2795 -5605
+2810 -5605
+2810 -5375
+2795 -5375
+ME1.O2
+3 3 2 Mar 23 17:35:23 2022                     
+Rule File Pathname: /home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/laker/_rule.drc_
+metal enclose contact at end-of-line or outer corner is 0.08 
+p 1 5
+CN test c 1 0 0 1 0 0 0
+-1660 -5535
+-1430 -5535
+-1430 -5305
+-1545 -5420
+-1660 -5305
+p 2 5
+-1475 -6390
+-1245 -6390
+-1245 -6160
+-1475 -6160
+-1360 -6275
+p 3 3
+-1050 -1830
+-820 -1610
+-1050 -1610
+VIA1.O3
+2 2 2 Mar 23 17:35:23 2022                     
+Rule File Pathname: /home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/laker/_rule.drc_
+metal1 enclose Via1 at end-of-line or outer corner is 0.1
+p 1 5
+CN test c 1 0 0 1 0 0 0
+-1670 -5540
+-1420 -5540
+-1420 -5290
+-1545 -5415
+-1670 -5290
+p 2 5
+5660 -8475
+5910 -8475
+5910 -8225
+5785 -8350
+5660 -8225
+ME2.O2
+2 2 2 Mar 23 17:35:23 2022                     
+Rule File Pathname: /home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/laker/_rule.drc_
+metal2 enclose Via1 at end-of-line or outer corner is 0.1
+p 1 5
+CN test c 1 0 0 1 0 0 0
+-1670 -5540
+-1545 -5415
+-1420 -5540
+-1420 -5290
+-1670 -5290
+p 2 5
+5660 -8475
+5910 -8475
+5910 -8225
+5660 -8225
+5785 -8350

@@ -1,0 +1,53 @@
+d_latch 1000
+SOFTCHK PSUB LOWER.
+1 1 4 Mar 23 19:11:42 2022                                                      
+Net VDD is selected for stamping.
+Rejected nets: GND
+Net VDD is selected for stamping.
+Rejected nets: GND
+p 1 26
+CN d_latch c 1 0 0 1 0 0
+DN VDD
+-4005 -10255
+7010 -10255
+7010 7190
+5810 7190
+5810 -5810
+1630 -5810
+1630 -6575
+-2280 -6575
+-2280 -4565
+1570 -4565
+1570 -2915
+5810 -2915
+5810 7190
+3085 7190
+3085 3320
+925 3320
+925 6190
+3085 6190
+3085 7190
+885 7190
+885 -1375
+-2280 -1375
+-2280 845
+885 845
+885 7190
+-4005 7190
+SOFTCHK WEL LOWER.
+1 1 4 Mar 23 19:11:42 2022                                                      
+Net VDD is selected for stamping.
+Rejected nets: GND
+Net VDD is selected for stamping.
+Rejected nets: GND
+p 1 8
+CN d_latch c 1 0 0 1 0 0
+DN VDD
+-2280 -6575
+1630 -6575
+1630 -5810
+5810 -5810
+5810 -2915
+1570 -2915
+1570 -4565
+-2280 -4565

@@ -1,0 +1,72 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  lab
+* Top Cell Name: sram_6t
+* View Name:     schematic
+* Netlisted on:  Jun 17 17:26:18 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: lab
+* Cell Name:    sram_6t
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT sram_6t CLK GND Q Q_b RE VDD WE bit bit_b data word
+*.PININFO CLK:I GND:I RE:I VDD:I WE:I data:I Q:O Q_b:O bit:O bit_b:O word:O
+MM39 net_030 data net_032 VDD p_18 W=1u L=180.00n
+MM38 net_032 WE_b net_033 VDD p_18 W=1u L=180.00n
+MM37 net_033 CLK VDD VDD p_18 W=1u L=180.00n
+MM33 net_024 data_b net_029 VDD p_18 W=1u L=180.00n
+MM32 net_029 WE_b net_028 VDD p_18 W=1u L=180.00n
+MM31 net_028 CLK VDD VDD p_18 W=1u L=180.00n
+MM24 Q Q_b VDD VDD p_18 W=250n L=180.00n
+MM21 Q_b Q VDD VDD p_18 W=250n L=180.00n
+MM19 bit CLK_b VDD VDD p_18 W=500n L=180.00n
+MM18 bit_b CLK_b VDD VDD p_18 W=500n L=180.00n
+MM17 word net_010 VDD VDD p_18 W=500n L=180.00n
+MM15 net_010 CLK_b VDD VDD p_18 W=500n L=180.00n
+MM14 net_010 net1 VDD VDD p_18 W=500n L=180.00n
+MM11 net1 RE_b VDD VDD p_18 W=500n L=180.00n
+MM10 net1 WE_b VDD VDD p_18 W=500n L=180.00n
+MM7 data_b data VDD VDD p_18 W=500n L=180.00n
+MM4 RE_b RE VDD VDD p_18 W=500n L=180.00n
+MM3 WE_b WE VDD VDD p_18 W=500n L=180.00n
+MM0 CLK_b CLK VDD VDD p_18 W=500n L=180.00n
+MM36 net_030 CLK GND GND n_18 W=250n L=180.00n
+MM35 net_030 WE_b GND GND n_18 W=250n L=180.00n
+MM34 net_030 data GND GND n_18 W=250n L=180.00n
+MM30 net_024 CLK GND GND n_18 W=250n L=180.00n
+MM29 net_024 WE_b GND GND n_18 W=250n L=180.00n
+MM28 net_024 data_b GND GND n_18 W=250n L=180.00n
+MM27 bit net_030 GND GND n_18 W=250n L=180.00n
+MM26 bit_b net_024 GND GND n_18 W=250n L=180.00n
+MM25 bit_b word Q_b GND n_18 W=500n L=180.00n
+MM23 Q Q_b GND GND n_18 W=1u L=180.00n
+MM22 Q_b Q GND GND n_18 W=1u L=180.00n
+MM20 bit word Q GND n_18 W=500n L=180.00n
+MM16 word net_010 GND GND n_18 W=250n L=180.00n
+MM13 net_015 CLK_b GND GND n_18 W=500n L=180.00n
+MM12 net_010 net1 net_015 GND n_18 W=500n L=180.00n
+MM9 net17 RE_b GND GND n_18 W=500n L=180.00n
+MM8 net1 WE_b net17 GND n_18 W=500n L=180.00n
+MM6 data_b data GND GND n_18 W=250n L=180.00n
+MM5 RE_b RE GND GND n_18 W=250n L=180.00n
+MM2 WE_b WE GND GND n_18 W=250n L=180.00n
+MM1 CLK_b CLK GND GND n_18 W=250n L=180.00n
+.ENDS
+

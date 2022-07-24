@@ -1,0 +1,38 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  lab
+* Top Cell Name: nor_3
+* View Name:     schematic
+* Netlisted on:  Mar 31 17:14:07 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: lab
+* Cell Name:    nor_3
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT nor_3 A B C GND VDD Y
+*.PININFO A:I B:I C:I GND:I VDD:I Y:O
+MM2 Y C net1 VDD p_18 W=18u L=180.00n
+MM1 net1 B net4 VDD p_18 W=18u L=180.00n
+MM0 net4 A VDD VDD p_18 W=18u L=180.00n
+MM8 Y C GND GND n_18 W=2u L=180.00n
+MM6 Y B GND GND n_18 W=2u L=180.00n
+MM5 Y A GND GND n_18 W=2u L=180.00n
+.ENDS
+

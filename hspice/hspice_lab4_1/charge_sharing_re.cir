@@ -1,0 +1,44 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  lab
+* Top Cell Name: charge_sharing
+* View Name:     schematic
+* Netlisted on:  May 18 22:39:29 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: lab
+* Cell Name:    charge_sharing
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT charge_sharing A B C CLK D GND VDD Y
+*.PININFO A:I B:I C:I CLK:I D:I GND:I VDD:I Y:O
+MM7 net05 Y VDD VDD p_18 W=500.0n L=180n
+MM0 Y CLK VDD VDD p_18 W=500.0n L=180n
+MM6 net05 Y GND GND n_18 W=500n L=180n
+MM5 net11 CLK GND GND n_18 W=2u L=180n
+MM4 Y B net8 GND n_18 W=2u L=180n
+MM3 Y C net8 GND n_18 W=2u L=180n
+MM2 net12 D net11 GND n_18 W=2u L=180n
+MM1 net8 A net12 GND n_18 W=2u L=180n
+
+*Mpe net8 CLK VDD VDD p_18 W=500.0n L=180n
+*Mpe net12 CLK VDD VDD p_18 W=500.0n L=180n
+Mke Y net05 VDD VDD p_18 W=500.0n L=180n
+.ENDS
+

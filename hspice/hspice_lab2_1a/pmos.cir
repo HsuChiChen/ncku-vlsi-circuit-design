@@ -1,0 +1,32 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  lab1
+* Top Cell Name: pmos
+* View Name:     schematic
+* Netlisted on:  Mar 31 10:13:12 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: lab1
+* Cell Name:    pmos
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT pmos VDD G D
+*.PININFO VDD:I G:I GND:O
+MM0 D G VDD VDD p_18 W=15u L=180.00n
+.ENDS

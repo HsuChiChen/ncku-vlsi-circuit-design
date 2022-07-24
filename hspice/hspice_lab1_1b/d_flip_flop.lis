@@ -1,0 +1,122 @@
+ ****** HSPICE -- O-2018.09 linux64 (Aug 26 2018) ******                        
+  Copyright (c) 1986 - 2022 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: d_flip_flop.sp                                                    
+  Command line options: /usr/cad/synopsys/hspice/cur/hspice/linux64/hspice -i d_flip_flop.sp -o d_flip_flop.lis
+ lic:  
+ lic: FLEXlm: SDK_11.6.9.6 
+ lic: USER:   vlsisj2022063        HOSTNAME: tsri06 
+ lic: HOSTID: b4b52fc6a3e9         PID:      14466 
+ lic: Using FLEXlm license file: 
+ lic: 26585@lsncku 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 14-may-2022/2021.09 
+ lic: 133(in_use)/190(total) FLOATING license(s) on SERVER 26585@lsncku 
+ lic:   
+  **warning** (d_flip_flop.cir:18) Parameter name is not defined in .param. Please enter parameter variable with their respective value/expression.
+  **warning** (d_flip_flop.cir:29) Global net name, "gnd", in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** HSPICE -- O-2018.09 linux64 (Aug 26 2018) ******                        
+ ******  
+ **lab1 1a testbench**
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xtest.                          d_flip_flop        1.00 
+        2 xtest.xi4.                      inv                1.00 
+        3 xtest.xi6.                      inv                1.00 
+        4 xtest.xi1.                      inv                1.00 
+        5 xtest.xi7.                      inv                1.00 
+        6 xtest.xi2.                      inv                1.00 
+        7 xtest.xi10.                     tran_gate          1.00 
+        8 xtest.xi9.                      tran_gate          1.00 
+        9 xtest.xi3.                      tran_gate          1.00 
+       10 xtest.xi5.                      tran_gate          1.00 
+  **info** (d_flip_flop.sp:26) DC voltage reset to initial transient source value in source 0:vclk. new dc=0.0000D+00
+ 
+
+  
+      
+
+Element variations(Local):   element              parameter
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=d_flip_flop.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ **lab1 1a testbench**
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:clk     =   0.       0:d       =   0.       0:q       =   1.8000 
+ + 0:vdd     =   1.8000   1:clk_inv =   1.8000   1:net03   =   1.8352n
+ + 1:net04   =  53.1756n  1:net05   =   1.8000   1:net06   =  12.8124n
+ + 1:net07   =  39.8213n
+
+
+          ***** job concluded
+ ******  
+ **lab1 1a testbench**
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+ cpu MHz	: 3392.281
+  
+ OS:
+ Linux version 2.6.32-642.el6.x86_64 (mockbuild@worker1.bsys.centos.org) (gcc version 4.4.7 20120313 (Red Hat 4.4.7-17) (GCC) ) #1 SMP Tue May 10 17:27:01 UTC 2016
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     8
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      47 # elements   =      21
+  # resistors   =       0 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       3
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      18 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1          12
+  transient          0.05      200001         641         257 rev=         4
+  readin             0.02
+  errchk             0.01
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        290.35 megabytes
+           total cpu time            0.09 seconds
+           total elapsed time        0.33 seconds
+           job started at     20:46:01 03/23/2022
+           job ended   at     20:46:02 03/23/2022
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.27(s)

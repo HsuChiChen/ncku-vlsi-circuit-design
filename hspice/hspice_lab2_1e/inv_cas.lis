@@ -1,0 +1,128 @@
+ ****** PrimeSim HSPICE -- R-2020.12-SP2 linux64 (May 24 2021 7074677) ******
+  Copyright (c) 1986 - 2022 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: inv_cas.sp                                                        
+  Command line options: /cad/synopsys/hspice/2020.12-sp2/hspice/linux64/hspice -i inv_cas.sp -o inv_cas.lis
+  Start time: Thu Mar 31 17:10:12 2022
+ lic:  
+ lic: FLEXlm: SDK_12.9.5 
+ lic: USER:   vlsisj2022063        HOSTNAME: tsri16 
+ lic: HOSTID: b4b52fd58581         PID:      16085 
+ lic: Using FLEXlm license file: 
+ lic: 26585@lsncku 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 14-may-2022/2021.09 
+ lic: 97(in_use)/190(total) FLOATING license(s) on SERVER 26585@lsncku 
+ lic:   
+  **warning** (inv.cir:18) Parameter name is not defined in .param. Please enter parameter variable with their respective value/expression.
+  **warning** (inv.cir:29) Global net name "gnd" in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** PrimeSim HSPICE -- R-2020.12-SP2 linux64 (May 24 2021 7074677) ******
+ ******  
+ **testbench**
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xinv_a.                         inv                1.00 
+        2 xinv_b.                         inv                7.00 
+        3 xinv_c.                         inv               49.00 
+        4 xinv_d.                         inv              343.00 
+        5 xinv_e.                         inv                2.40k
+
+**warning** NO.2 tran analysis statement is duplicate, ignored!
+  **info** (inv_cas.sp:31) DC voltage reset to initial transient source value in source 0:vclk. new dc=0.0000D+00
+ 
+
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=inv_cas.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ **testbench**
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:in      =  12.1944n 0:out     =   1.8000  0:pulse_in=   0.     
+ +0:pulse_ou=   1.8000  0:vdd     =   1.8000  0:wire1   =   1.8000 
+ +0:wire2   =  12.1944n
+
+ ******
+ **testbench**
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tdelay_rise= 134.4676p  targ=  40.2832n   trig=  40.1488n
+ tdelay_fall= 129.7379p  targ=  30.2746n   trig=  30.1449n
+ tdelay_avg= 132.1027p
+
+          ***** job concluded
+ ******  
+ **testbench**
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+ cpu MHz	: 3392.245
+ CPU(s)		: 8
+  
+ OS:
+ Linux version 2.6.32-642.el6.x86_64 (mockbuild@worker1.bsys.centos.org) (gcc version 4.4.7 20120313 (Red Hat 4.4.7-17) (GCC) ) #1 SMP Tue May 10 17:27:01 UTC 2016
+
+ System loadavg : 1.25 1.45 0.92 2/407 16088
+
+
+  ******  PrimeSim HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     8
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      28 # elements   =      12
+  # resistors   =       0 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       2
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      10 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1           4
+  transient          0.06      200001        2405         849 rev=        30
+  readin             0.02
+  errchk             0.00
+  setup              0.01
+  output             0.00
+
+
+           peak memory used        439.30 megabytes
+           total cpu time            0.09 seconds
+           total elapsed time        0.40 seconds
+           job started at     17:10:12 03/31/2022
+           job ended   at     17:10:13 03/31/2022
+           job total runtime         0.40 seconds
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.31(s)

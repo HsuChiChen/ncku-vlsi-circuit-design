@@ -1,0 +1,4 @@
+Command Line: /usr/cad/synopsys/laker/cur/platform/LINUX64/bin/laker
+uname(Linux cic-svr 2.6.32-696.el6.x86_64 #1 SMP Tue Mar 21 19:29:05 UTC 2017 x86_64)
+source /usr/cad/synopsys/laker/cur/gift/gift.tcl
+au time 24.450158 2.451627 1.463777 delta 31846400 31846400 total 379625472 379625472

@@ -1,0 +1,12 @@
+\o Program:		@(#)$CDS: cdsLibEditor version 6.1.6 - CAT33 03/04/2015 15:04 (sjfnl821) $
+\o Sub version:		sub-version  s016 
+\o Arguments:		-cdslib /home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/schematics/cds.lib -mpssession virtuoso7721 -mpshost tsri06 
+\o Working Directory:	tsri06:/home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/schematics
+\o 64-bit offsets
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		4.7.2
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrResizeWindow(cdsLibEditor list(709 321 500 400))
+\a cdsLibEditor->fileExitButton->value = t
+\a nrSetWindowVisibility(cdsLibEditor "hide")
+\a exit(0)

@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='O-2018.09 linux64' PARAM_COUNT=0
+.TITLE '**testbench**'
+ rising_delay     falling_delay    delay_avg        temper          
+ alter#          
+  9.591e-11        1.735e-10        1.347e-10         25.0000       
+1               

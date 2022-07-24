@@ -1,0 +1,61 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  lab1
+* Top Cell Name: d_latch
+* View Name:     schematic
+* Netlisted on:  Mar 23 20:22:56 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: lab1
+* Cell Name:    inv
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inv GND VDD in out
+*.PININFO GND:I VDD:I in:I out:O
+MM5 out in GND GND n_18 W=500.0n L=180.00n
+MM4 out in VDD VDD p_18 W=1u L=180.00n
+.ENDS
+
+************************************************************************
+* Library Name: lab1
+* Cell Name:    tran_gate
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT tran_gate GND VDD down in out up
+*.PININFO GND:I VDD:I down:I in:I up:I out:O
+MM14 in up out GND n_18 W=1u L=180.00n
+MM11 out down in VDD p_18 W=1u L=180.00n
+.ENDS
+
+************************************************************************
+* Library Name: lab1
+* Cell Name:    d_latch
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT d_latch CLK D GND Q Q_INV VDD
+*.PININFO CLK:I D:I GND:I VDD:I Q:O Q_INV:O
+XI4 GND VDD CLK CLK_INV / inv
+XI1 GND VDD Q_INV net06 / inv
+XI2 GND VDD Q Q_INV / inv
+XI3 GND VDD CLK_INV D Q CLK / tran_gate
+XI5 GND VDD CLK net06 Q CLK_INV / tran_gate
+.ENDS
+

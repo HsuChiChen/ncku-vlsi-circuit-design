@@ -1,0 +1,92 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  lab
+* Top Cell Name: path_delay_4
+* View Name:     schematic
+* Netlisted on:  Apr  8 21:17:06 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: lab
+* Cell Name:    nand_3
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT nand_3 A B C GND VDD Y
+*.PININFO A:I B:I C:I GND:I VDD:I Y:O
+MM4 Y C VDD VDD p_18 W=2u L=180.00n
+MM1 Y B VDD VDD p_18 W=2u L=180.00n
+MM0 Y A VDD VDD p_18 W=2u L=180.00n
+MM6 net1 B net4 GND n_18 W=3u L=180.00n
+MM5 Y A net1 GND n_18 W=3u L=180.00n
+MM9 net4 C GND GND n_18 W=3u L=180.00n
+.ENDS
+
+************************************************************************
+* Library Name: lab
+* Cell Name:    nand
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT nand A B GND VDD Y
+*.PININFO A:I B:I GND:I VDD:I Y:O
+MM1 Y B VDD VDD p_18 W=22.35u L=180.00n
+MM0 Y A VDD VDD p_18 W=22.35u L=180.00n
+MM6 net1 B GND GND n_18 W=22.35u L=180.00n
+MM5 Y A net1 GND n_18 W=22.35u L=180.00n
+.ENDS
+
+************************************************************************
+* Library Name: lab
+* Cell Name:    inv
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inv GND VDD in out
+*.PININFO GND:I VDD:I in:I out:O
+MM5 out in GND GND n_18 W=3.86u L=180.00n
+MM4 out in VDD VDD p_18 W=7.72u L=180.00n
+.ENDS
+
+************************************************************************
+* Library Name: lab
+* Cell Name:    inv_2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inv_2 GND VDD in out
+*.PININFO GND:I VDD:I in:I out:O
+MM5 out in GND GND n_18 W=43.2u L=180.00n
+MM4 out in VDD VDD p_18 W=86.4u L=180.00n
+.ENDS
+
+************************************************************************
+* Library Name: lab
+* Cell Name:    path_delay_4
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT path_delay_4 GND VDD out pulse_in
+*.PININFO GND:I VDD:I pulse_in:I out:O
+XI14 VDD VDD pulse_in GND VDD net14 / nand_3
+XI3 VDD VDD VDD GND VDD net7 / nand_3
+XI7 net9 net10 GND VDD net11 / nand
+XI10 GND VDD net14 net10 / inv
+XI9 GND VDD net7 net9 / inv
+XI15 GND VDD net11 out / inv_2
+.ENDS
+

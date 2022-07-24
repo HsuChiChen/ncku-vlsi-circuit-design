@@ -1,0 +1,15 @@
+Command Line: /usr/cad/synopsys/laker/cur/platform/LINUX64/bin/laker
+uname(Linux cic-svr 2.6.32-696.el6.x86_64 #1 SMP Tue Mar 21 19:29:05 UTC 2017 x86_64)
+source /usr/cad/synopsys/laker/cur/gift/gift.tcl
+lakerOpenDesign -lib lab -cell fun2 -mode edit
+lakerSetActiveLayer -layerName DIFF -purpose drawing
+lakerCloseDesign
+lakerOpenDesign -lib lab -cell pseudo_nmos -mode edit
+lakerSetActiveLayer -layerName DIFF -purpose drawing
+lakerZoomAll
+lakerZoomInByArea -point (3.124,-5.759) (13.002,-1.339)
+lakerZoomOut
+lakerZoomOut
+lakerZoomAll
+lakerCloseDesign
+au time 148.453903 7.619842 8.333734 delta 41435136 41435136 total 389214208 389214208

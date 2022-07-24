@@ -1,0 +1,66 @@
+       ###############################################
+       ##                                           ##
+       ##    FileName:  gdsOut.log                  ##
+       ##    GenDate :  27-May-2022   16:10:03      ##
+       ##                                           ##
+       ##    Laker:  2018.12 (Linux x86_64/64bit) 12/05/2018  ##
+       ##############################################N
+
+Command: gdsOut -64 -SkipWarnNo 100 -keepPCell off -s Preserve -label Preserve -T "pseudo_nmos" -filterAllSysLayer "All" -reduceMCell off -maxAryColRow off -precisionForMag 5 -reduceDevice off -filterText off -convertPolyText off -pathToPolygon off -purposeMap on -designIntention off -Ref -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -Vm 4096 -o /home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/calibre/Calibre_PEX/pseudo_nmos.calibre.db lab
+Host/OS: tsri06   Linux 2.6.32-642.el6.x86_64
+
+
+##### Stream Cells #####
+
+   1.pseudo_nmos          
+
+
+##### Stream Error File(gdsOut.err) #####
+
+ All cells have no fatal,warn,info message.
+
+
+##### Stream Summary #####
+
+                   Resort Primary Cell(s)
+
+--------------------------------------------------------------------------
+   1.pseudo_nmos          
+
+
+                   Resort Cell(s) Summary
+
+cellName     #cInst  #array    #rect    #poly    #path    #text  bBox(um)
+--------------------------------------------------------------------------------------------------
+pseudo_nmos       0       0      210        0        0        9 (6.775,-6.670) (16.975,4.820)
+
+
+                   Resort Layer(s) Summary
+
+Laker                Stream
+layerName   purpose  layerNo  dataType    #rect    #poly    #path    #text
+--------------------------------------------------------------------------
+DIFF        drawing        1        0        11        0        0        0
+NW          drawing        3        0         2        0        0        0
+PIMP        drawing       11        0         3        0        0        0
+NIMP        drawing       12        0         4        0        0        0
+CONT        drawing       39        0       122        0        0        0
+PO1         drawing       41        0        32        0        0        0
+ME1         drawing       46        0        29        0        0        0
+VIA1        drawing       47        0         4        0        0        0
+ME2         drawing       48        0         3        0        0        0
+M1_TEXT     drawing      101        0         0        0        0        9
+
+
+
+
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off
+
+ EXE Start Time = 27-May-2022   16:10:03                  
+ EXE Stop  Time = 27-May-2022   16:10:03                  
+
+ #Elapsed Time  = 00:00:00
+ #CPU Time      = 00:00:00
+
+ #Memory 420756 K,Peak 420756 K
+ Total #Fatal = 0, #Warn = 0

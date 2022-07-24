@@ -1,0 +1,112 @@
+ ****** HSPICE -- O-2018.09 linux64 (Aug 26 2018) ******                        
+  Copyright (c) 1986 - 2022 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: nmos_pmos_tran.sp                                                 
+  Command line options: /usr/cad/synopsys/hspice/cur/hspice/linux64/hspice -i nmos_pmos_tran.sp -o nmos_pmos_tran.lis
+ lic:  
+ lic: FLEXlm: SDK_11.6.9.6 
+ lic: USER:   vlsisj2022063        HOSTNAME: tsri06 
+ lic: HOSTID: b4b52fc6a3e9         PID:      10856 
+ lic: Using FLEXlm license file: 
+ lic: 26585@lsncku 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 14-may-2022/2021.09 
+ lic: 144(in_use)/190(total) FLOATING license(s) on SERVER 26585@lsncku 
+ lic:   
+  **warning** (nmos_pmos_tran.cir:18) Parameter name is not defined in .param. Please enter parameter variable with their respective value/expression.
+  **warning** (nmos_pmos_tran.cir:29) Global net name, "gnd", in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** HSPICE -- O-2018.09 linux64 (Aug 26 2018) ******                        
+ ******  
+ **lab1 1a testbench**
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xtest.                          nmos_pmos_tran     1.00 
+  **info** (nmos_pmos_tran.sp:26) DC voltage reset to initial transient source value in source 0:vclk. new dc=0.0000D+00
+ 
+
+  
+      
+
+Element variations(Local):   element              parameter
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=nmos_pmos_tran.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ **lab1 1a testbench**
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:clk     =   0.      0:vdd     =   1.8000  0:vin     =   0.     
+ +0:vout    =  28.9551m 0:vout_n  =   0.      0:vout_p  = 347.1742m
+ +1:net1    =   1.8000 
+
+
+          ***** job concluded
+ ******  
+ **lab1 1a testbench**
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+ cpu MHz	: 3392.281
+  
+ OS:
+ Linux version 2.6.32-642.el6.x86_64 (mockbuild@worker1.bsys.centos.org) (gcc version 4.4.7 20120313 (Red Hat 4.4.7-17) (GCC) ) #1 SMP Tue May 10 17:27:01 UTC 2016
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     8
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      20 # elements   =      12
+  # resistors   =       0 # capacitors =       3 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       3
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       6 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1          23
+  transient          0.03      200001         750         322 rev=        14
+  readin             0.01
+  errchk             0.01
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        289.86 megabytes
+           total cpu time            0.06 seconds
+           total elapsed time        0.33 seconds
+           job started at     20:11:13 03/23/2022
+           job ended   at     20:11:14 03/23/2022
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.28(s)

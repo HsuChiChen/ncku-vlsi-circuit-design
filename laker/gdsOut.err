@@ -1,0 +1,9 @@
+### Illegal Shapes Setting ###
+Rectangle with Zero Square Measure : ON, FATAL
+Polygon with Vertices Number Less than 4 : ON, FATAL
+Open Polygon : ON, FATAL
+Reentrant Polygon : ON, FATAL
+Path with Zero Width : ON, FATAL
+Self-intersected Polygon : OFF, FATAL
+Flash Path : ON, FATAL
+

@@ -1,0 +1,38 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  lab
+* Top Cell Name: write_noise_margin
+* View Name:     schematic
+* Netlisted on:  Jun 17 20:38:04 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: lab
+* Cell Name:    write_noise_margin
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT write_noise_margin GND V1 V2 VDD
+*.PININFO GND:I V1:I VDD:I V2:O
+MM1 GND VDD V1 GND n_18 W=500n L=180.00n
+MM0 V1 V2 GND GND n_18 W=1u L=180.00n
+MM22 V2 V1 GND GND n_18 W=1u L=180.00n
+MM25 VDD VDD V2 GND n_18 W=500n L=180.00n
+MM2 V1 V2 VDD VDD p_18 W=250n L=180.00n
+MM21 V2 V1 VDD VDD p_18 W=250n L=180.00n
+.ENDS
+

@@ -1,0 +1,14 @@
+ring_oscillator 1000
+SOFTCHK PSUB LOWER.
+1 1 2 May  9 21:07:21 2022                                                      
+Net VDD is selected for stamping.
+Rejected nets: vin 2 3 4 5 GND
+p 1 4
+CN ring_oscillator c 1 0 0 1 0 0
+DN VDD
+-235 -3080
+9875 -3080
+9875 4230
+-235 4230
+SOFTCHK WEL LOWER.
+0 0 0 May  9 21:07:21 2022                                                      

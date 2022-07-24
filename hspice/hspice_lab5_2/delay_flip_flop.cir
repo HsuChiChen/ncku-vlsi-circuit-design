@@ -1,0 +1,48 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  lab
+* Top Cell Name: delay_flip_flop
+* View Name:     schematic
+* Netlisted on:  Jun 20 00:41:41 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: lab
+* Cell Name:    delay_flip_flop
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT delay_flip_flop CLK CLK_b D GND Q VDD
+*.PININFO CLK:I CLK_b:I D:I GND:I VDD:I Q:O
+MM14 Q net19 VDD VDD p_18 W=1u L=180.00n
+MM12 net19 CLK_b QM_b VDD p_18 W=1.5u L=180.00n
+MM5 net21 Q VDD VDD p_18 W=1u L=180.00n
+MM7 QM_b net9 VDD VDD p_18 W=1u L=180.00n
+MM1 net21 CLK net19 VDD p_18 W=1.5u L=180.00n
+MM0 net9 CLK D VDD p_18 W=1.5u L=180.00n
+MM10 net11 QM_b VDD VDD p_18 W=1u L=180.00n
+MM3 net11 CLK_b net9 VDD p_18 W=1.5u L=180.00n
+MM15 net19 CLK QM_b GND n_18 W=1.5u L=180n
+MM13 Q net19 GND GND n_18 W=500.0n L=180n
+MM11 net21 CLK_b net19 GND n_18 W=1.5u L=180n
+MM2 net9 CLK_b D GND n_18 W=1.5u L=180n
+MM4 net21 Q GND GND n_18 W=500.0n L=180n
+MM6 QM_b net9 GND GND n_18 W=500.0n L=180n
+MM8 net11 CLK net9 GND n_18 W=1.5u L=180n
+MM9 net11 QM_b GND GND n_18 W=500.0n L=180n
+.ENDS
+

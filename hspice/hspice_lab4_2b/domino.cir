@@ -1,0 +1,47 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  lab
+* Top Cell Name: domino
+* View Name:     schematic
+* Netlisted on:  May 30 15:57:35 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*sweep stage2
+*pmos : '8*size'
+*nmos : 'size'
+
+************************************************************************
+* Library Name: lab
+* Cell Name:    domino
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT domino A B C CLK D E F GND VDD Y
+*.PININFO A:I B:I C:I CLK:I D:I E:I F:I GND:I VDD:I Y:O
+MM13 net2 CLK VDD VDD p_18 W=540n L=180.00n
+MM0 net1 CLK VDD VDD p_18 W=540n L=180.00n
+MM2 net_38 net2 VDD VDD p_18 W=8000n L=180.00n
+MM1 Y net1 net_38 VDD p_18 W=8000n L=180.00n
+MM4 net1 A net_40 GND n_18 W=2.7u L=180.00n
+MM3 net_40 B net_026 GND n_18 W=2.7u L=180.00n
+MM8 net_025 CLK GND GND n_18 W=2.7u L=180.00n
+MM9 net_024 CLK GND GND n_18 W=2.7u L=180.00n
+MM10 net_023 F net_024 GND n_18 W=2.7u L=180.00n
+MM11 net_022 E net_023 GND n_18 W=2.7u L=180.00n
+MM5 Y net1 GND GND n_18 W=1000n L=180.00n
+MM7 net_026 C net_025 GND n_18 W=2.7u L=180.00n
+MM12 net2 D net_022 GND n_18 W=2.7u L=180.00n
+MM6 Y net2 GND GND n_18 W=1000n L=180.00n
+.ENDS

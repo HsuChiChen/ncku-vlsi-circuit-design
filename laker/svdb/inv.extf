@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1648020325 1648020325
+lvs_ExtOutFile RUNDIR /home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/laker
+lvs_ExtOutFile RULES_FILE /home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/laker/_Rule.lvs_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST /home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/laker/inv.sp
+lvs_ExtOutFile EXTRACTION_REPORT inv.lvs.report.ext

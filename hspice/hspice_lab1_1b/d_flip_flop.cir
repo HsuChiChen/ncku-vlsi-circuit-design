@@ -1,0 +1,65 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  lab1
+* Top Cell Name: d_flip_flop
+* View Name:     schematic
+* Netlisted on:  Mar 23 18:42:33 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: lab1
+* Cell Name:    inv
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inv GND VDD in out
+*.PININFO GND:I VDD:I in:I out:O
+MM5 out in GND GND n_18 W=500.0n L=180.00n
+MM4 out in VDD VDD p_18 W=1u L=180.00n
+.ENDS
+
+************************************************************************
+* Library Name: lab1
+* Cell Name:    tran_gate
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT tran_gate GND VDD down in out up
+*.PININFO GND:I VDD:I down:I in:I up:I out:O
+MM14 in up out GND n_18 W=1u L=180.00n
+MM11 out down in VDD p_18 W=1u L=180.00n
+.ENDS
+
+************************************************************************
+* Library Name: lab1
+* Cell Name:    d_flip_flop
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT d_flip_flop CLK D GND Q VDD
+*.PININFO CLK:I D:I GND:I VDD:I Q:O
+XI4 GND VDD CLK CLK_INV / inv
+XI6 GND VDD net04 Q / inv
+XI1 GND VDD net05 net06 / inv
+XI7 GND VDD Q net07 / inv
+XI2 GND VDD net03 net05 / inv
+XI10 GND VDD CLK_INV net05 net04 CLK / tran_gate
+XI9 GND VDD CLK net07 net04 CLK_INV / tran_gate
+XI3 GND VDD CLK D net03 CLK_INV / tran_gate
+XI5 GND VDD CLK_INV net06 net03 CLK / tran_gate
+.ENDS
+

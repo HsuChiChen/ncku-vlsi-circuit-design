@@ -1,0 +1,388 @@
+
+
+==================================================================================
+=== CALIBRE::DRC-H SUMMARY REPORT
+===
+Execution Date/Time:       Wed Mar 23 20:34:53 2022
+Calibre Version:           v2016.4_15.11    Thu Nov 3 15:15:38 PDT 2016
+Rule File Pathname:        /home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/laker/_rule.drc_
+Rule File Title:           
+Layout System:             GDS
+Layout Path(s):            d_latch.calibre.db
+Layout Primary Cell:       d_latch
+Current Directory:         /home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/laker
+User Name:                 vlsisj2022063
+Maximum Results/RuleCheck: 1000
+Maximum Result Vertices:   4096
+DRC Results Database:      d_latch.drc.results (ASCII)
+Layout Depth:              ALL
+Text Depth:                PRIMARY
+Summary Report File:       d_latch.drc.summary (REPLACE)
+Geometry Flagging:         ACUTE = YES  SKEW = NO  ANGLED = NO  OFFGRID = YES
+                           NONSIMPLE POLYGON = NO  NONSIMPLE PATH = NO
+Excluded Cells:           
+CheckText Mapping:         COMMENT TEXT + RULE FILE INFORMATION
+Layers:                    MEMORY-BASED
+Keep Empty Checks:         NO
+----------------------------------------------------------------------------------
+--- RUNTIME WARNINGS
+---
+----------------------------------------------------------------------------------
+--- ORIGINAL LAYER STATISTICS
+---
+LAYER ROM_ID ..... TOTAL Original Geometry Count = 0  (0)
+LAYER DP_ID ...... TOTAL Original Geometry Count = 0  (0)
+LAYER BLSP_ID1 ... TOTAL Original Geometry Count = 0  (0)
+LAYER BLSP_ID2 ... TOTAL Original Geometry Count = 0  (0)
+LAYER DP_ID2 ..... TOTAL Original Geometry Count = 0  (0)
+LAYER BDSP_ID .... TOTAL Original Geometry Count = 0  (0)
+LAYER DP_ID1 ..... TOTAL Original Geometry Count = 0  (0)
+LAYER IOID ....... TOTAL Original Geometry Count = 0  (0)
+LAYER IOMARK ..... TOTAL Original Geometry Count = 0  (0)
+LAYER TG ......... TOTAL Original Geometry Count = 0  (0)
+LAYER TWEL ....... TOTAL Original Geometry Count = 0  (0)
+LAYER NWEL ....... TOTAL Original Geometry Count = 4  (4)
+LAYER DIFF ....... TOTAL Original Geometry Count = 20 (20)
+LAYER PPLUS ...... TOTAL Original Geometry Count = 9  (9)
+LAYER NWR ........ TOTAL Original Geometry Count = 0  (0)
+LAYER PO1 ........ TOTAL Original Geometry Count = 16 (16)
+LAYER CONT ....... TOTAL Original Geometry Count = 54 (54)
+LAYER HR ......... TOTAL Original Geometry Count = 0  (0)
+LAYER SAB ........ TOTAL Original Geometry Count = 0  (0)
+LAYER VTPL ....... TOTAL Original Geometry Count = 0  (0)
+LAYER VTPHL ...... TOTAL Original Geometry Count = 0  (0)
+LAYER VTNL ....... TOTAL Original Geometry Count = 0  (0)
+LAYER VTNI ....... TOTAL Original Geometry Count = 0  (0)
+LAYER VTNHL ...... TOTAL Original Geometry Count = 0  (0)
+LAYER ME1 ........ TOTAL Original Geometry Count = 25 (25)
+LAYER VI1 ........ TOTAL Original Geometry Count = 2  (2)
+LAYER ME2 ........ TOTAL Original Geometry Count = 2  (2)
+LAYER VI2 ........ TOTAL Original Geometry Count = 0  (0)
+LAYER ME3 ........ TOTAL Original Geometry Count = 0  (0)
+LAYER VI3 ........ TOTAL Original Geometry Count = 0  (0)
+LAYER ME4 ........ TOTAL Original Geometry Count = 0  (0)
+LAYER VI4 ........ TOTAL Original Geometry Count = 0  (0)
+LAYER ME5 ........ TOTAL Original Geometry Count = 0  (0)
+LAYER VI5 ........ TOTAL Original Geometry Count = 0  (0)
+LAYER ME6 ........ TOTAL Original Geometry Count = 0  (0)
+LAYER BLSPLP ..... TOTAL Original Geometry Count = 0  (0)
+LAYER NPLUS ...... TOTAL Original Geometry Count = 9  (9)
+LAYER DSYMBOL .... TOTAL Original Geometry Count = 0  (0)
+LAYER CSYMBOL .... TOTAL Original Geometry Count = 0  (0)
+LAYER DIOBLK ..... TOTAL Original Geometry Count = 0  (0)
+LAYER MMC ........ TOTAL Original Geometry Count = 0  (0)
+LAYER LSYMBOL .... TOTAL Original Geometry Count = 0  (0)
+LAYER IND ........ TOTAL Original Geometry Count = 0  (0)
+LAYER PAD ........ TOTAL Original Geometry Count = 0  (0)
+LAYER PESD ....... TOTAL Original Geometry Count = 0  (0)
+----------------------------------------------------------------------------------
+--- RULECHECK RESULTS STATISTICS
+---
+RULECHECK Off_Grid .......... TOTAL Result Count = 0 (0)
+RULECHECK DIFF.W1.DIFF.W2 ... TOTAL Result Count = 0 (0)
+RULECHECK DIFF.S1.DIFF.S2 ... TOTAL Result Count = 0 (0)
+RULECHECK DIFF.S3.18 ........ TOTAL Result Count = 0 (0)
+RULECHECK DIFF.S3.33 ........ TOTAL Result Count = 0 (0)
+RULECHECK DIFF.O1 ........... TOTAL Result Count = 0 (0)
+RULECHECK DIFF.S4 ........... TOTAL Result Count = 0 (0)
+RULECHECK DIFF.S5 ........... TOTAL Result Count = 0 (0)
+RULECHECK DIFF.S6.18 ........ TOTAL Result Count = 0 (0)
+RULECHECK DIFF.S6.33 ........ TOTAL Result Count = 0 (0)
+RULECHECK DIFF.O2.18 ........ TOTAL Result Count = 0 (0)
+RULECHECK DIFF.O2.33 ........ TOTAL Result Count = 0 (0)
+RULECHECK DIFF.O3.18 ........ TOTAL Result Count = 0 (0)
+RULECHECK DIFF.O3.33 ........ TOTAL Result Count = 0 (0)
+RULECHECK DIFF.O4 ........... TOTAL Result Count = 0 (0)
+RULECHECK NW.W1 ............. TOTAL Result Count = 0 (0)
+RULECHECK NW.W2 ............. TOTAL Result Count = 0 (0)
+RULECHECK NW.W3 ............. TOTAL Result Count = 0 (0)
+RULECHECK NW.S1 ............. TOTAL Result Count = 0 (0)
+RULECHECK NW.S2.18 .......... TOTAL Result Count = 0 (0)
+RULECHECK NW.S2.33 .......... TOTAL Result Count = 0 (0)
+RULECHECK NW.S3 ............. TOTAL Result Count = 0 (0)
+RULECHECK NW.S4 ............. TOTAL Result Count = 0 (0)
+RULECHECK DNW.W1 ............ TOTAL Result Count = 0 (0)
+RULECHECK DNW.S1 ............ TOTAL Result Count = 0 (0)
+RULECHECK DNW.S2.18 ......... TOTAL Result Count = 0 (0)
+RULECHECK DNW.S2.33 ......... TOTAL Result Count = 0 (0)
+RULECHECK DNW.O1 ............ TOTAL Result Count = 0 (0)
+RULECHECK VTPL.W1 ........... TOTAL Result Count = 0 (0)
+RULECHECK VTPL.W2 ........... TOTAL Result Count = 0 (0)
+RULECHECK VTPL.S1 ........... TOTAL Result Count = 0 (0)
+RULECHECK VTPL.O1 ........... TOTAL Result Count = 0 (0)
+RULECHECK VTPL.S2 ........... TOTAL Result Count = 0 (0)
+RULECHECK VTPL.O2 ........... TOTAL Result Count = 0 (0)
+RULECHECK VTPL.S3 ........... TOTAL Result Count = 0 (0)
+RULECHECK VTPHL.W1 .......... TOTAL Result Count = 0 (0)
+RULECHECK VTPHL.W2 .......... TOTAL Result Count = 0 (0)
+RULECHECK VTPHL.S1 .......... TOTAL Result Count = 0 (0)
+RULECHECK VTPHL.O1 .......... TOTAL Result Count = 0 (0)
+RULECHECK VTPHL.S2 .......... TOTAL Result Count = 0 (0)
+RULECHECK VTPHL.O2 .......... TOTAL Result Count = 0 (0)
+RULECHECK VTPHL.S3 .......... TOTAL Result Count = 0 (0)
+RULECHECK VTNL.W1.18 ........ TOTAL Result Count = 0 (0)
+RULECHECK VTNL.W1.33 ........ TOTAL Result Count = 0 (0)
+RULECHECK VTNL.W2 ........... TOTAL Result Count = 0 (0)
+RULECHECK VTNL.S1 ........... TOTAL Result Count = 0 (0)
+RULECHECK VTNL.O1 ........... TOTAL Result Count = 0 (0)
+RULECHECK VTNL.S2 ........... TOTAL Result Count = 0 (0)
+RULECHECK VTNL.O2 ........... TOTAL Result Count = 0 (0)
+RULECHECK VTNL.S3 ........... TOTAL Result Count = 0 (0)
+RULECHECK VTNI.W1 ........... TOTAL Result Count = 0 (0)
+RULECHECK VTNI.W2 ........... TOTAL Result Count = 0 (0)
+RULECHECK VTNI.S1 ........... TOTAL Result Count = 0 (0)
+RULECHECK VTNI.O1 ........... TOTAL Result Count = 0 (0)
+RULECHECK VTNI.S2 ........... TOTAL Result Count = 0 (0)
+RULECHECK VTNI.O2 ........... TOTAL Result Count = 0 (0)
+RULECHECK VTNI.S3 ........... TOTAL Result Count = 0 (0)
+RULECHECK VTNHL.W1 .......... TOTAL Result Count = 0 (0)
+RULECHECK VTNHL.W2 .......... TOTAL Result Count = 0 (0)
+RULECHECK VTNHL.S1 .......... TOTAL Result Count = 0 (0)
+RULECHECK VTNHL.O1 .......... TOTAL Result Count = 0 (0)
+RULECHECK VTNHL.S2 .......... TOTAL Result Count = 0 (0)
+RULECHECK VTNHL.O2 .......... TOTAL Result Count = 0 (0)
+RULECHECK VTNHL.S3 .......... TOTAL Result Count = 0 (0)
+RULECHECK OD2.W1 ............ TOTAL Result Count = 0 (0)
+RULECHECK OD2.S1 ............ TOTAL Result Count = 0 (0)
+RULECHECK OD2.O1 ............ TOTAL Result Count = 0 (0)
+RULECHECK OD2.S2 ............ TOTAL Result Count = 0 (0)
+RULECHECK OD2.O2 ............ TOTAL Result Count = 0 (0)
+RULECHECK OD2.S3 ............ TOTAL Result Count = 0 (0)
+RULECHECK PO1.W1.18.PO.W2 ... TOTAL Result Count = 0 (0)
+RULECHECK PO1.W1.33 ......... TOTAL Result Count = 0 (0)
+RULECHECK PO1.S1.a .......... TOTAL Result Count = 0 (0)
+RULECHECK PO1.S1.b .......... TOTAL Result Count = 0 (0)
+RULECHECK PO1.S2.a .......... TOTAL Result Count = 0 (0)
+RULECHECK PO1.S2.b .......... TOTAL Result Count = 0 (0)
+RULECHECK PO1.S3.a .......... TOTAL Result Count = 0 (0)
+RULECHECK PO1.S3.b.1 ........ TOTAL Result Count = 0 (0)
+RULECHECK PO1.S3.b.2 ........ TOTAL Result Count = 0 (0)
+RULECHECK PO1.E1 ............ TOTAL Result Count = 0 (0)
+RULECHECK PO1.S4 ............ TOTAL Result Count = 0 (0)
+RULECHECK PO1.S5 ............ TOTAL Result Count = 0 (0)
+RULECHECK PO1.S6 ............ TOTAL Result Count = 0 (0)
+RULECHECK PO1.W3.18 ......... TOTAL Result Count = 0 (0)
+RULECHECK PO1.W3.33 ......... TOTAL Result Count = 0 (0)
+RULECHECK PO1.A1 ............ TOTAL Result Count = 0 (0)
+RULECHECK PO1.O1 ............ TOTAL Result Count = 0 (0)
+RULECHECK PO1.S7 ............ TOTAL Result Count = 0 (0)
+RULECHECK HRP.W1 ............ TOTAL Result Count = 0 (0)
+RULECHECK HRP.S1 ............ TOTAL Result Count = 0 (0)
+RULECHECK HRP.W2 ............ TOTAL Result Count = 0 (0)
+RULECHECK HRP.W3 ............ TOTAL Result Count = 0 (0)
+RULECHECK HRP.O1 ............ TOTAL Result Count = 0 (0)
+RULECHECK HRP.S2 ............ TOTAL Result Count = 0 (0)
+RULECHECK HRP.S3 ............ TOTAL Result Count = 0 (0)
+RULECHECK HRP.S4 ............ TOTAL Result Count = 0 (0)
+RULECHECK HRP.E1 ............ TOTAL Result Count = 0 (0)
+RULECHECK HRP.S5 ............ TOTAL Result Count = 0 (0)
+RULECHECK HRP.S6 ............ TOTAL Result Count = 0 (0)
+RULECHECK HRP.O2 ............ TOTAL Result Count = 0 (0)
+RULECHECK HRP.O3 ............ TOTAL Result Count = 0 (0)
+RULECHECK HRP.S7 ............ TOTAL Result Count = 0 (0)
+RULECHECK HRP.O4 ............ TOTAL Result Count = 0 (0)
+RULECHECK HRP.not.allow ..... TOTAL Result Count = 0 (0)
+RULECHECK NIMP.W1 ........... TOTAL Result Count = 0 (0)
+RULECHECK NIMP.S1 ........... TOTAL Result Count = 0 (0)
+RULECHECK NIMP.O1 ........... TOTAL Result Count = 0 (0)
+RULECHECK NIMP.O2 ........... TOTAL Result Count = 0 (0)
+RULECHECK NIMP.S2 ........... TOTAL Result Count = 0 (0)
+RULECHECK NIMP.S3 ........... TOTAL Result Count = 0 (0)
+RULECHECK NIMP.S4 ........... TOTAL Result Count = 0 (0)
+RULECHECK NIMP.E1 ........... TOTAL Result Count = 0 (0)
+RULECHECK NIMP.E2 ........... TOTAL Result Count = 0 (0)
+RULECHECK NIMP.S5 ........... TOTAL Result Count = 0 (0)
+RULECHECK NIMP.O3 ........... TOTAL Result Count = 0 (0)
+RULECHECK NIMP.O4 ........... TOTAL Result Count = 0 (0)
+RULECHECK NIMP.S6 ........... TOTAL Result Count = 0 (0)
+RULECHECK NIMP.P1 ........... TOTAL Result Count = 0 (0)
+RULECHECK NIMP.S7 ........... TOTAL Result Count = 0 (0)
+RULECHECK NIMP.ERR .......... TOTAL Result Count = 0 (0)
+RULECHECK PIMP.W1 ........... TOTAL Result Count = 0 (0)
+RULECHECK PIMP.S1 ........... TOTAL Result Count = 0 (0)
+RULECHECK PIMP.O2 ........... TOTAL Result Count = 0 (0)
+RULECHECK PIMP.O1 ........... TOTAL Result Count = 0 (0)
+RULECHECK PIMP.S2 ........... TOTAL Result Count = 0 (0)
+RULECHECK PIMP.S3 ........... TOTAL Result Count = 0 (0)
+RULECHECK PIMP.E1 ........... TOTAL Result Count = 0 (0)
+RULECHECK PIMP.E2 ........... TOTAL Result Count = 0 (0)
+RULECHECK PIMP.S5 ........... TOTAL Result Count = 0 (0)
+RULECHECK PIMP.O3 ........... TOTAL Result Count = 0 (0)
+RULECHECK PIMP.O4 ........... TOTAL Result Count = 0 (0)
+RULECHECK PIMP.S6 ........... TOTAL Result Count = 0 (0)
+RULECHECK PIMP.P1 ........... TOTAL Result Count = 0 (0)
+RULECHECK PIMP.S7 ........... TOTAL Result Count = 0 (0)
+RULECHECK SAB.W1 ............ TOTAL Result Count = 0 (0)
+RULECHECK SAB.S1 ............ TOTAL Result Count = 0 (0)
+RULECHECK SAB.E1 ............ TOTAL Result Count = 0 (0)
+RULECHECK SAB.S2 ............ TOTAL Result Count = 0 (0)
+RULECHECK SAB.S3 ............ TOTAL Result Count = 0 (0)
+RULECHECK SAB.S4 ............ TOTAL Result Count = 0 (0)
+RULECHECK SAB.S5 ............ TOTAL Result Count = 0 (0)
+RULECHECK SAB.E2 ............ TOTAL Result Count = 0 (0)
+RULECHECK SAB.E3 ............ TOTAL Result Count = 0 (0)
+RULECHECK SAB.S6 ............ TOTAL Result Count = 0 (0)
+RULECHECK SAB.O1 ............ TOTAL Result Count = 0 (0)
+RULECHECK 4.18K ............. TOTAL Result Count = 0 (0)
+RULECHECK SAB.S7 ............ TOTAL Result Count = 0 (0)
+RULECHECK SAB.S8 ............ TOTAL Result Count = 0 (0)
+RULECHECK SAB.O3 ............ TOTAL Result Count = 0 (0)
+RULECHECK SAB.S9 ............ TOTAL Result Count = 0 (0)
+RULECHECK SAB.N1 ............ TOTAL Result Count = 0 (0)
+RULECHECK CONT.A1 ........... TOTAL Result Count = 0 (0)
+RULECHECK CONT.S1 ........... TOTAL Result Count = 0 (0)
+RULECHECK CONT.S2.18 ........ TOTAL Result Count = 0 (0)
+RULECHECK CONT.S2.33 ........ TOTAL Result Count = 0 (0)
+RULECHECK CONT.S3 ........... TOTAL Result Count = 0 (0)
+RULECHECK CONT.O1 ........... TOTAL Result Count = 0 (0)
+RULECHECK CONT.O2 ........... TOTAL Result Count = 0 (0)
+RULECHECK ME1.W1 ............ TOTAL Result Count = 0 (0)
+RULECHECK ME1.S1 ............ TOTAL Result Count = 0 (0)
+RULECHECK ME1.S2 ............ TOTAL Result Count = 0 (0)
+RULECHECK ME1.O1 ............ TOTAL Result Count = 0 (0)
+RULECHECK ME1.O2 ............ TOTAL Result Count = 0 (0)
+RULECHECK ME1.A1 ............ TOTAL Result Count = 0 (0)
+RULECHECK VIA1.A1 ........... TOTAL Result Count = 0 (0)
+RULECHECK VIA1.S1 ........... TOTAL Result Count = 0 (0)
+RULECHECK VIA1.O1 ........... TOTAL Result Count = 0 (0)
+RULECHECK VIA1.O2 ........... TOTAL Result Count = 0 (0)
+RULECHECK VIA1.O3 ........... TOTAL Result Count = 0 (0)
+RULECHECK ME2.W1 ............ TOTAL Result Count = 0 (0)
+RULECHECK ME2.S1 ............ TOTAL Result Count = 0 (0)
+RULECHECK ME2.s2 ............ TOTAL Result Count = 0 (0)
+RULECHECK ME2.O1 ............ TOTAL Result Count = 0 (0)
+RULECHECK ME2.O2 ............ TOTAL Result Count = 0 (0)
+RULECHECK ME2.A1 ............ TOTAL Result Count = 0 (0)
+RULECHECK VIA2.A1 ........... TOTAL Result Count = 0 (0)
+RULECHECK VIA2.S1 ........... TOTAL Result Count = 0 (0)
+RULECHECK VIA2.O1 ........... TOTAL Result Count = 0 (0)
+RULECHECK VIA2.O2 ........... TOTAL Result Count = 0 (0)
+RULECHECK VIA2.O3 ........... TOTAL Result Count = 0 (0)
+RULECHECK ME3.W1 ............ TOTAL Result Count = 0 (0)
+RULECHECK ME3.S1 ............ TOTAL Result Count = 0 (0)
+RULECHECK ME3.S2 ............ TOTAL Result Count = 0 (0)
+RULECHECK ME3.O1 ............ TOTAL Result Count = 0 (0)
+RULECHECK ME3.O2 ............ TOTAL Result Count = 0 (0)
+RULECHECK ME3.A1 ............ TOTAL Result Count = 0 (0)
+RULECHECK VIA3.A1 ........... TOTAL Result Count = 0 (0)
+RULECHECK VIA3.S1 ........... TOTAL Result Count = 0 (0)
+RULECHECK VIA3.O1 ........... TOTAL Result Count = 0 (0)
+RULECHECK VIA3.O2 ........... TOTAL Result Count = 0 (0)
+RULECHECK VIA3.O3 ........... TOTAL Result Count = 0 (0)
+RULECHECK ME4.W1 ............ TOTAL Result Count = 0 (0)
+RULECHECK ME4.S1 ............ TOTAL Result Count = 0 (0)
+RULECHECK ME4.S2 ............ TOTAL Result Count = 0 (0)
+RULECHECK ME4.O1 ............ TOTAL Result Count = 0 (0)
+RULECHECK ME4.O2 ............ TOTAL Result Count = 0 (0)
+RULECHECK ME4.A1 ............ TOTAL Result Count = 0 (0)
+RULECHECK VIA4.A1 ........... TOTAL Result Count = 0 (0)
+RULECHECK VIA4.S1 ........... TOTAL Result Count = 0 (0)
+RULECHECK VIA4.O1 ........... TOTAL Result Count = 0 (0)
+RULECHECK VIA4.O2 ........... TOTAL Result Count = 0 (0)
+RULECHECK VIA4.O3 ........... TOTAL Result Count = 0 (0)
+RULECHECK ME5.W1 ............ TOTAL Result Count = 0 (0)
+RULECHECK ME5.S1 ............ TOTAL Result Count = 0 (0)
+RULECHECK ME5.S2 ............ TOTAL Result Count = 0 (0)
+RULECHECK ME5.O1 ............ TOTAL Result Count = 0 (0)
+RULECHECK ME5.O2 ............ TOTAL Result Count = 0 (0)
+RULECHECK ME5.A1 ............ TOTAL Result Count = 0 (0)
+RULECHECK CTM.W1 ............ TOTAL Result Count = 0 (0)
+RULECHECK CTM.S1 ............ TOTAL Result Count = 0 (0)
+RULECHECK CTM.O1 ............ TOTAL Result Count = 0 (0)
+RULECHECK CTM.O2 ............ TOTAL Result Count = 0 (0)
+RULECHECK CTM.S2 ............ TOTAL Result Count = 0 (0)
+RULECHECK CTM.A1 ............ TOTAL Result Count = 0 (0)
+RULECHECK CTM.O3 ............ NOT EXECUTED
+RULECHECK CTM.O4 ............ NOT EXECUTED
+RULECHECK VIA5.A1 ........... TOTAL Result Count = 0 (0)
+RULECHECK VIA5.S1 ........... TOTAL Result Count = 0 (0)
+RULECHECK VIA5.O1 ........... TOTAL Result Count = 0 (0)
+RULECHECK VIA5.O2 ........... TOTAL Result Count = 0 (0)
+RULECHECK VIA5.O3 ........... TOTAL Result Count = 0 (0)
+RULECHECK ME6.W1_8KA ........ TOTAL Result Count = 0 (0)
+RULECHECK ME6.S1_8KA ........ TOTAL Result Count = 0 (0)
+RULECHECK ME6.S2_8KA ........ TOTAL Result Count = 0 (0)
+RULECHECK ME6.O1_8KA ........ TOTAL Result Count = 0 (0)
+RULECHECK ME6.O2_8KA ........ TOTAL Result Count = 0 (0)
+RULECHECK ME6.A1_8KA ........ TOTAL Result Count = 0 (0)
+RULECHECK ME6.W1_20KA ....... TOTAL Result Count = 0 (0)
+RULECHECK ME6.S1_20KA ....... TOTAL Result Count = 0 (0)
+RULECHECK ME6.S2_20KA ....... TOTAL Result Count = 0 (0)
+RULECHECK ME6.O1_20KA ....... TOTAL Result Count = 0 (0)
+RULECHECK ME6.O2_20KA ....... TOTAL Result Count = 0 (0)
+RULECHECK ME6.A1_20KA ....... TOTAL Result Count = 0 (0)
+RULECHECK ME6.O3_20KA ....... TOTAL Result Count = 0 (0)
+RULECHECK PESD.W1 ........... TOTAL Result Count = 0 (0)
+RULECHECK PESD.S1 ........... TOTAL Result Count = 0 (0)
+RULECHECK PO1.D1 ............ NOT EXECUTED
+RULECHECK PO1.D2 ............ NOT EXECUTED
+RULECHECK ME1.D1 ............ NOT EXECUTED
+RULECHECK ME1.D2 ............ NOT EXECUTED
+RULECHECK ME2.D1 ............ NOT EXECUTED
+RULECHECK ME2.D2 ............ NOT EXECUTED
+RULECHECK ME3.D1 ............ NOT EXECUTED
+RULECHECK ME3.D2 ............ NOT EXECUTED
+RULECHECK ME4.D1 ............ NOT EXECUTED
+RULECHECK ME4.D2 ............ NOT EXECUTED
+RULECHECK ME5.D1 ............ NOT EXECUTED
+RULECHECK ME5.D2 ............ NOT EXECUTED
+RULECHECK ME6.D1 ............ NOT EXECUTED
+RULECHECK ME6.D2 ............ NOT EXECUTED
+RULECHECK ME1.S3 ............ NOT EXECUTED
+RULECHECK ME2.S3 ............ NOT EXECUTED
+RULECHECK ME3.S3 ............ NOT EXECUTED
+RULECHECK ME4.S3 ............ NOT EXECUTED
+RULECHECK ME5.S3 ............ NOT EXECUTED
+RULECHECK DC.100.MET1 ....... NOT EXECUTED
+RULECHECK DC.99.MET1 ........ NOT EXECUTED
+RULECHECK DC.100.MET2 ....... NOT EXECUTED
+RULECHECK DC.99.MET2 ........ NOT EXECUTED
+RULECHECK DC.100.MET3 ....... NOT EXECUTED
+RULECHECK DC.99.MET3 ........ NOT EXECUTED
+RULECHECK DC.100.MET4 ....... NOT EXECUTED
+RULECHECK DC.99.MET4 ........ NOT EXECUTED
+RULECHECK DC.100.MET5 ....... NOT EXECUTED
+RULECHECK DC.99.MET5 ........ NOT EXECUTED
+RULECHECK DC.100.MET6 ....... NOT EXECUTED
+RULECHECK DC.99.MET6 ........ NOT EXECUTED
+RULECHECK SLOT.W1_M1 ........ NOT EXECUTED
+RULECHECK SLOT.W2_M1 ........ NOT EXECUTED
+RULECHECK SLOT.S1_M1 ........ NOT EXECUTED
+RULECHECK SLOT.S2_M1 ........ NOT EXECUTED
+RULECHECK SLOT.S3_M1 ........ NOT EXECUTED
+RULECHECK SLOT.W1_M2 ........ NOT EXECUTED
+RULECHECK SLOT.W2_M2 ........ NOT EXECUTED
+RULECHECK SLOT.S1_M2 ........ NOT EXECUTED
+RULECHECK SLOT.S2_M2 ........ NOT EXECUTED
+RULECHECK SLOT.S3_M2 ........ NOT EXECUTED
+RULECHECK SLOT.W1_M3 ........ NOT EXECUTED
+RULECHECK SLOT.W2_M3 ........ NOT EXECUTED
+RULECHECK SLOT.S1_M3 ........ NOT EXECUTED
+RULECHECK SLOT.S2_M3 ........ NOT EXECUTED
+RULECHECK SLOT.S3_M3 ........ NOT EXECUTED
+RULECHECK SLOT.W1_M4 ........ NOT EXECUTED
+RULECHECK SLOT.W2_M4 ........ NOT EXECUTED
+RULECHECK SLOT.S1_M4 ........ NOT EXECUTED
+RULECHECK SLOT.S2_M4 ........ NOT EXECUTED
+RULECHECK SLOT.S3_M4 ........ NOT EXECUTED
+RULECHECK SLOT.W1_M5 ........ NOT EXECUTED
+RULECHECK SLOT.W2_M5 ........ NOT EXECUTED
+RULECHECK SLOT.S1_M5 ........ NOT EXECUTED
+RULECHECK SLOT.S2_M5 ........ NOT EXECUTED
+RULECHECK SLOT.S3_M5 ........ NOT EXECUTED
+RULECHECK SLOT.W1_M6 ........ NOT EXECUTED
+RULECHECK SLOT.W2_M6 ........ NOT EXECUTED
+RULECHECK SLOT.S1_M6 ........ NOT EXECUTED
+RULECHECK SLOT.S2_M6 ........ NOT EXECUTED
+RULECHECK SLOT.S3_M6 ........ NOT EXECUTED
+----------------------------------------------------------------------------------
+--- RULECHECK RESULTS STATISTICS (BY CELL)
+---
+----------------------------------------------------------------------------------
+--- SUMMARY
+---
+TOTAL CPU Time:                  0
+TOTAL REAL Time:                 0
+TOTAL Original Layer Geometries: 141 (141)
+TOTAL DRC RuleChecks Executed:   234
+TOTAL DRC Results Generated:     0 (0)

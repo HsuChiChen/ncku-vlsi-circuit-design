@@ -1,0 +1,200 @@
+ ****** PrimeSim HSPICE -- R-2020.12-SP2 linux64 (May 24 2021 7074677) ******
+  Copyright (c) 1986 - 2022 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: oai14_pex.sp                                                      
+  Command line options: /cad/synopsys/hspice/2020.12-sp2/hspice/linux64/hspice -i oai14_pex.sp -o oai14_pex.lis
+  Start time: Fri Apr  8 18:59:06 2022
+ lic:  
+ lic: FLEXlm: SDK_12.9.5 
+ lic: USER:   vlsisj2022063        HOSTNAME: tsri18 
+ lic: HOSTID: b4b52fcd99d8         PID:      24864 
+ lic: Using FLEXlm license file: 
+ lic: 26585@lsncku 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 14-may-2022/2021.09 
+ lic: 137(in_use)/190(total) FLOATING license(s) on SERVER 26585@lsncku 
+ lic:   
+  **warning** (oai14.pex.netlist:7) Global net name "gnd" in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** PrimeSim HSPICE -- R-2020.12-SP2 linux64 (May 24 2021 7074677) ******
+ ******  
+ **testbench**
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xtest.                          oai14              1.00 
+        2 xtest.x_pm_oai14%a.             pm_oai14%a         1.00 
+        3 xtest.x_pm_oai14%y.             pm_oai14%y         1.00 
+        4 xtest.x_pm_oai14%b.             pm_oai14%b         1.00 
+        5 xtest.x_pm_oai14%c.             pm_oai14%c         1.00 
+        6 xtest.x_pm_oai14%d.             pm_oai14%d         1.00 
+        7 xtest.x_pm_oai14%vdd.           pm_oai14%vdd       1.00 
+        8 xtest.x_pm_oai14%gnd.           pm_oai14%gnd       1.00 
+        9 xtest.x_pm_oai14%e.             pm_oai14%e         1.00 
+       10 xtest.x_pm_oai14%noxref_9.      pm_oai14%noxref_9
+                                                                 1.00 
+       11 xtest.x_pm_oai14%noxref_10.     pm_oai14%noxref_10
+                                                                 1.00 
+       12 xtest.x_pm_oai14%noxref_11.     pm_oai14%noxref_11
+                                                                 1.00 
+       13 xtest.x_pm_oai14%noxref_12.     pm_oai14%noxref_12
+                                                                 1.00 
+  **info** (oai14_pex.sp:74) DC voltage reset to initial transient source value in source 0:va. new dc=0.0000D+00
+  **warning** (oai14.pex.netlist.pex:104) Both nodes of element xtest.x_pm_oai14%gnd.c4 are connected together; Line ignored.
+ 
+
+ Warning(s) associated with encrypted block(s) were suppressed due to encrypted content.
+             
+ Summary of Linear Res Distribution Info
+ ---------------------------------------
+ |Range          |Total     |Percent(%)|
+ |---------------+----------+----------|
+ |1e-03  ~  1e-02|1         |1.0417    |
+ |1e-02  ~  1e-01|18        |18.7500   |
+ |1e-01  ~  1e+00|21        |21.8750   |
+ |1e+00  ~  1e+03|56        |58.3333   |
+ ---------------------------------------
+              
+             
+ Summary of Linear Cap Distribution Info
+ ---------------------------------------
+ |Range          |Total     |Percent(%)|
+ |---------------+----------+----------|
+ |1e-17  ~  1e-16|13        |33.3333   |
+ |1e-16  ~  1e-15|25        |64.1026   |
+ |1e-15  ~  1e-14|1         |2.5641    |
+ ---------------------------------------
+              
+             
+ Summary of Detailed RC Type Statistics
+ -------------------------
+ |Element Type|Number    |
+ |------------+----------|
+ |Constant Res|96        |
+ |            |          |
+ |Constant Cap|39        |
+ -------------------------
+              
+  
+      
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=oai14_pex.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ **testbench**
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a       =   0.       0:b       =   0.       0:c       =   0.     
+ + 0:d       =   1.8000   0:e       =   1.8000   0:vdd     =   1.8000 
+ + 0:y       =   1.8000   1:n_noxref=   1.8000   1:n_noxref=   1.8000 
+ + 1:n_noxref=   3.6448n  1:n_noxref=   1.8000   1:n_noxref=   1.8000 
+ + 1:n_noxref=   1.8000   1:n_noxref=   1.8000   1:n_a_mm7_=   0.     
+ + 1:n_a_mm9_=   0.       1:n_b_mm4_=   0.       1:n_b_mm5_=   0.     
+ + 1:n_c_mm2_=   0.       1:n_c_mm6_=   0.       1:n_d_mm1_=   1.8000 
+ + 1:n_d_mm8_=   1.8000   1:n_e_mm0_=   1.8000   1:n_e_mm10=   1.8000 
+ + 1:n_gnd_mm= 136.4816p  1:n_gnd_mm=   2.6281p  1:n_gnd_mm=   2.6281p
+ + 1:n_gnd_mm= 136.4940p  1:n_gnd_mm=   6.3034p  1:n_noxref=   3.8406n
+ + 1:n_noxref=   3.6634n  1:n_noxref=   3.6475n  1:n_noxref=   3.8872n
+ + 1:n_vdd_mm=   1.8000   1:n_vdd_mm=   1.8000   1:n_vdd_mm=   1.8000 
+ + 1:n_y_mm4_=   1.8000   1:n_y_mm7_=   1.8000   1:n_y_mm9_=   1.8000 
+ + 2:2       =   0.       2:8       =   0.       2:11      =   0.     
+ + 2:12      =   0.       3:2       =   1.8000   3:3       =   1.8000 
+ + 3:4       =   1.8000   3:5       =   1.8000   3:10      =   1.8000 
+ + 3:11      =   1.8000   3:17      =   1.8000   3:18      =   1.8000 
+ + 4:9       =   0.       4:10      =   0.       4:11      =   0.     
+ + 5:2       =   0.       5:3       =   0.       5:6       =   0.     
+ + 5:10      =   0.       5:12      =   0.       5:14      =   0.     
+ + 5:17      =   0.       6:2       =   1.8000   6:6       =   1.8000 
+ + 6:10      =   1.8000   6:13      =   1.8000   6:14      =   1.8000 
+ + 6:15      =   1.8000   7:2       =   1.8000   7:3       =   1.8000 
+ + 7:4       =   1.8000   7:5       =   1.8000   7:11      =   1.8000 
+ + 7:12      =   1.8000   7:16      =   1.8000   7:17      =   1.8000 
+ + 7:23      =   1.8000   8:4       =   1.9585p  8:8       =   2.6281p
+ + 8:9       =   2.6281p  8:10      =   2.6281p  8:11      =   2.5081p
+ + 8:12      =   2.3465p  8:13      =   2.3063p  8:19      =   2.6281p
+ + 8:24      =   2.6281p  8:25      =   2.6281p  8:29      = 120.6863p
+ + 8:30      =   8.2330p  9:2       =   1.8000   9:5       =   1.8000 
+ + 9:6       =   1.8000   9:7       =   1.8000   9:12      =   1.8000 
+ +10:2       =   3.7210n 10:3       =   3.7258n 10:4       =   3.7180n
+ +10:5       =   3.7204n 10:6       =   3.7263n 10:7       =   3.7205n
+ +10:8       =   3.7206n 10:9       =   3.7177n 10:13      =   3.8406n
+ +10:14      =   3.7281n 10:18      =   3.6634n 10:19      =   3.7196n
+ +10:22      =   3.6606n 10:23      =   3.7168n
+
+ ******
+ **testbench**
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tdelay_fall=  94.6751p  targ=  29.9947n   trig=  29.9000n
+
+          ***** job concluded
+ ******  
+ **testbench**
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+ cpu MHz	: 3392.353
+ CPU(s)		: 8
+  
+ OS:
+ Linux version 2.6.32-642.el6.x86_64 (mockbuild@worker1.bsys.centos.org) (gcc version 4.4.7 20120313 (Red Hat 4.4.7-17) (GCC) ) #1 SMP Tue May 10 17:27:01 UTC 2016
+
+ System loadavg : 0.81 1.04 1.21 2/395 24867
+
+
+  ******  PrimeSim HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     8
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =     128 # elements   =     152
+  # resistors   =      96 # capacitors =      40 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       6
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      10 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1          20
+  transient          0.05      200001        1559         608 rev=        32
+  readin             0.02
+  errchk             0.00
+  setup              0.01
+  output             0.00
+
+
+           peak memory used        439.80 megabytes
+           total cpu time            0.11 seconds
+           total elapsed time        0.42 seconds
+           job started at     18:59:05 04/08/2022
+           job ended   at     18:59:06 04/08/2022
+           job total runtime         0.42 seconds
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.31(s)

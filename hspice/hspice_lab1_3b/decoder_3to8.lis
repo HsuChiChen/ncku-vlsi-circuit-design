@@ -1,0 +1,146 @@
+ ****** PrimeSim HSPICE -- R-2020.12-SP2 linux64 (May 24 2021 7074677) ******
+  Copyright (c) 1986 - 2022 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: decoder_3to8.sp                                                   
+  Command line options: /cad/synopsys/hspice/2020.12-sp2/hspice/linux64/hspice -i decoder_3to8.sp -o decoder_3to8.lis
+  Start time: Fri Mar 25 21:09:34 2022
+ lic:  
+ lic: FLEXlm: SDK_12.9.5 
+ lic: USER:   vlsisj2022063        HOSTNAME: tsri29 
+ lic: HOSTID: b4b52fc6a41f         PID:      4471 
+ lic: Using FLEXlm license file: 
+ lic: 26585@lsncku 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 14-may-2022/2021.09 
+ lic: 158(in_use)/190(total) FLOATING license(s) on SERVER 26585@lsncku 
+ lic:   
+  **warning** (decoder_3to8.cir:18) Parameter name is not defined in .param. Please enter parameter variable with their respective value/expression.
+  **warning** (decoder_3to8.cir:29) Global net name "gnd" in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** PrimeSim HSPICE -- R-2020.12-SP2 linux64 (May 24 2021 7074677) ******
+ ******  
+ **testbench**
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xtest.                          decoder_3to8       1.00 
+        2 xtest.xi3.                      nor                1.00 
+        3 xtest.xi2.                      nor                1.00 
+        4 xtest.xi5.                      inv                1.00 
+        5 xtest.xi4.                      inv                1.00 
+        6 xtest.xi1.                      decoder_2to4       1.00 
+        7 xtest.xi0.                      decoder_2to4       1.00 
+        8 xtest.xi1.xi7.                  inv                1.00 
+        9 xtest.xi1.xi1.                  inv                1.00 
+       10 xtest.xi1.xi0.                  inv                1.00 
+       11 xtest.xi1.xi2.                  nor_3              1.00 
+       12 xtest.xi1.xi3.                  nor_3              1.00 
+       13 xtest.xi1.xi4.                  nor_3              1.00 
+       14 xtest.xi1.xi5.                  nor_3              1.00 
+       15 xtest.xi0.xi7.                  inv                1.00 
+       16 xtest.xi0.xi1.                  inv                1.00 
+       17 xtest.xi0.xi0.                  inv                1.00 
+       18 xtest.xi0.xi2.                  nor_3              1.00 
+       19 xtest.xi0.xi3.                  nor_3              1.00 
+       20 xtest.xi0.xi4.                  nor_3              1.00 
+       21 xtest.xi0.xi5.                  nor_3              1.00 
+  **info** (decoder_3to8.sp:25) DC voltage reset to initial transient source value in source 0:ven. new dc=0.0000D+00
+ 
+
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=decoder_3to8.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ **testbench**
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:en      =   0.       0:vdd     =   1.8000   0:w0      =   0.     
+ + 0:w1      =   0.       0:w2      =   0.       0:y0      =  12.3883n
+ + 0:y1      =   3.7174n  0:y2      =   2.3683n  0:y3      =   1.2349n
+ + 0:y4      =  12.3883n  0:y5      =   3.7173n  0:y6      =   2.3683n
+ + 0:y7      =   1.2350n  1:net1    =  10.9565n  1:net15   =   1.8000 
+ + 1:net19   =   1.8000   1:net6    =   2.3683n  2:net4    =   1.7468 
+ + 3:net4    =   1.8000   6:net1    =   1.8000   6:net4    =   1.8000 
+ + 6:net6    =   1.8000   7:net1    =   1.8000   7:net4    =   1.8000 
+ + 7:net6    =   1.8000  11:net1    = 406.4094m 11:net4    =   1.8000 
+ +12:net1    = 388.1934m 12:net4    =   1.7552  13:net1    =   1.7468 
+ +13:net4    =   1.8000  14:net1    =   1.6842  14:net4    =   1.7793 
+ +18:net1    = 406.4094m 18:net4    =   1.8000  19:net1    = 388.1938m
+ +19:net4    =   1.7552  20:net1    =   1.7468  20:net4    =   1.8000 
+ +21:net1    =   1.6842  21:net4    =   1.7793 
+
+
+          ***** job concluded
+ ******  
+ **testbench**
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+ cpu MHz	: 3392.245
+ CPU(s)		: 8
+  
+ OS:
+ Linux version 2.6.32-642.el6.x86_64 (mockbuild@worker1.bsys.centos.org) (gcc version 4.4.7 20120313 (Red Hat 4.4.7-17) (GCC) ) #1 SMP Tue May 10 17:27:01 UTC 2016
+
+ System loadavg : 0.90 1.30 1.38 2/433 4474
+
+
+  ******  PrimeSim HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     8
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =     186 # elements   =      77
+  # resistors   =       0 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       5
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      72 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1          23
+  transient          0.22      200001        1974         747 rev=        37
+  readin             0.02
+  errchk             0.00
+  setup              0.01
+  output             0.00
+
+
+           peak memory used        440.78 megabytes
+           total cpu time            0.27 seconds
+           total elapsed time        0.58 seconds
+           job started at     21:09:34 03/25/2022
+           job ended   at     21:09:35 03/25/2022
+           job total runtime         0.58 seconds
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.31(s)

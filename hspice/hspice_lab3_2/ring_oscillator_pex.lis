@@ -1,0 +1,162 @@
+ ****** PrimeSim HSPICE -- R-2020.12-SP2 linux64 (May 24 2021 7074677) ******
+  Copyright (c) 1986 - 2022 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: ring_oscillator_pex.sp                                            
+  Command line options: /cad/synopsys/hspice/2020.12-sp2/hspice/linux64/hspice -i ring_oscillator_pex.sp -o ring_oscillator_pex.lis
+  Start time: Mon May  9 21:59:08 2022
+ lic:  
+ lic: FLEXlm: SDK_12.9.5 
+ lic: USER:   vlsisj2022063        HOSTNAME: tsri24 
+ lic: HOSTID: b4b52fcd99a1         PID:      11745 
+ lic: Using FLEXlm license file: 
+ lic: 26585@lsncku 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 14-may-2022/2021.09 
+ lic: 130(in_use)/190(total) FLOATING license(s) on SERVER 26585@lsncku 
+ lic:   
+  **warning** (ring_oscillator.pex.netlist:7) Global net name "gnd" in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** PrimeSim HSPICE -- R-2020.12-SP2 linux64 (May 24 2021 7074677) ******
+ ******  
+ **testbench**
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xring_oscillator.               ring_oscillator    1.00 
+        2 xring_oscillator.x_pm_ring_oscillator%net1.
+                                            pm_ring_oscillator%net1
+                                                                 1.00 
+        3 xring_oscillator.x_pm_ring_oscillator%net2.
+                                            pm_ring_oscillator%net2
+                                                                 1.00 
+        4 xring_oscillator.x_pm_ring_oscillator%net3.
+                                            pm_ring_oscillator%net3
+                                                                 1.00 
+        5 xring_oscillator.x_pm_ring_oscillator%net4.
+                                            pm_ring_oscillator%net4
+                                                                 1.00 
+        6 xring_oscillator.x_pm_ring_oscillator%vin.
+                                            pm_ring_oscillator%vin
+                                                                 1.00 
+        7 xring_oscillator.x_pm_ring_oscillator%gnd.
+                                            pm_ring_oscillator%gnd
+                                                                 1.00 
+        8 xring_oscillator.x_pm_ring_oscillator%vdd.
+                                            pm_ring_oscillator%vdd
+                                                                 1.00 
+ 
+
+ Warning(s) associated with encrypted block(s) were suppressed due to encrypted content.
+             
+ Summary of Linear Res Distribution Info
+ ---------------------------------------
+ |Range          |Total     |Percent(%)|
+ |---------------+----------+----------|
+ |1e-03  ~  1e-02|5         |2.2026    |
+ |1e-02  ~  1e-01|53        |23.3480   |
+ |1e-01  ~  1e+00|49        |21.5859   |
+ |1e+00  ~  1e+03|120       |52.8634   |
+ ---------------------------------------
+              
+             
+ Summary of Linear Cap Distribution Info
+ ---------------------------------------
+ |Range          |Total     |Percent(%)|
+ |---------------+----------+----------|
+ |1e-18  ~  1e-17|1         |1.0417    |
+ |1e-17  ~  1e-16|47        |48.9583   |
+ |1e-16  ~  1e-15|47        |48.9583   |
+ |1e-15  ~  1e-14|1         |1.0417    |
+ ---------------------------------------
+              
+             
+ Summary of Detailed RC Type Statistics
+ -------------------------
+ |Element Type|Number    |
+ |------------+----------|
+ |Constant Res|227       |
+ |            |          |
+ |Constant Cap|96        |
+ -------------------------
+              
+  
+      
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=ring_oscillator_pex.pa0
+
+ ******
+ **testbench**
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ period= 323.1017p  targ=   3.0854n   trig=   2.7623n
+ frequency=   3.0950g
+ t_on= 161.7975p  targ=   3.0854n   trig=   2.9236n
+ duty_cycle= 500.7632m
+
+          ***** job concluded
+ ******  
+ **testbench**
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+ cpu MHz	: 3392.299
+ CPU(s)		: 8
+  
+ OS:
+ Linux version 2.6.32-642.el6.x86_64 (mockbuild@worker1.bsys.centos.org) (gcc version 4.4.7 20120313 (Red Hat 4.4.7-17) (GCC) ) #1 SMP Tue May 10 17:27:01 UTC 2016
+
+ System loadavg : 1.28 1.51 1.40 1/387 11748
+
+
+  ******  PrimeSim HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     8
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =     274 # elements   =     344
+  # resistors   =     227 # capacitors =      96 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       1
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      20 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           0
+  transient          1.22       50001       16944        6019 rev=         1
+  readin             0.03
+  errchk             0.00
+  setup              0.01
+  output             0.00
+
+
+           peak memory used        440.79 megabytes
+           total cpu time            1.31 seconds
+           total elapsed time        1.63 seconds
+           job started at     21:59:08 05/09/2022
+           job ended   at     21:59:09 05/09/2022
+           job total runtime         1.63 seconds
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.31(s)

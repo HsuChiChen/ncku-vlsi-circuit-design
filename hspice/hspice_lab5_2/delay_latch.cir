@@ -1,0 +1,42 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  lab
+* Top Cell Name: delay_latch
+* View Name:     schematic
+* Netlisted on:  Jun 17 22:44:08 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: lab
+* Cell Name:    delay_latch
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT delay_latch CLK CLK_b D GND Q VDD
+*.PININFO CLK:I CLK_b:I D:I GND:I VDD:I Q:O
+MM7 Q net4 VDD VDD p_18 W=1u L=180.00n
+MM11 net2 D VDD VDD p_18 W=1u L=180.00n
+MM10 net08 Q VDD VDD p_18 W=1u L=180.00n
+MM3 net08 CLK net4 VDD p_18 W=1.5u L=180.00n
+MM0 net4 CLK_b net2 VDD p_18 W=1.5u L=180.00n
+MM9 net08 Q GND GND n_18 W=500.0n L=180n
+MM6 Q net4 GND GND n_18 W=500.0n L=180n
+MM4 net2 D GND GND n_18 W=500.0n L=180n
+MM8 net08 CLK_b net4 GND n_18 W=1.5u L=180n
+MM2 net4 CLK net2 GND n_18 W=1.5u L=180n
+.ENDS
+

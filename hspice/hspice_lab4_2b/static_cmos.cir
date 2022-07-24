@@ -1,0 +1,78 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  lab
+* Top Cell Name: static_cmos
+* View Name:     schematic
+* Netlisted on:  May 23 22:57:39 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*sweep stage1
+*pmos : '2700n - size'
+*nmos : 'size'
+*sweep stage2-1
+*pmos : '4*size'
+*nmos : 'size'
+*sweep stage2-2
+*pmos : 4000n
+*nmos : 'size'
+*sweep stage2-2
+*pmos : 'size'
+*nmos : 2160n
+*sweep stage2-3
+*pmos : 3530n
+*nmos : 'size'
+************************************************************************
+* Library Name: lab
+* Cell Name:    nand_3
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT nand_3 A B C GND VDD Y
+*.PININFO A:I B:I C:I GND:I VDD:I Y:O
+MM4 Y C VDD VDD p_18 W=1570n L=180.00n
+MM1 Y B VDD VDD p_18 W=1570n L=180.00n
+MM0 Y A VDD VDD p_18 W=1570n L=180.00n
+MM6 net1 B net4 GND n_18 W=1130n L=180.00n
+MM5 Y    A net1 GND n_18 W=1130n L=180.00n
+MM9 net4 C  GND GND n_18 W=1130n L=180.00n
+.ENDS
+
+************************************************************************
+* Library Name: lab
+* Cell Name:    nor
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT nor A B GND VDD Y
+*.PININFO A:I B:I GND:I VDD:I Y:O
+MM1 Y A net4 VDD p_18 W=3530n L=180.00n
+MM0 net4 B VDD VDD p_18 W=3530n L=180.00n
+MM6 Y B GND GND n_18 W=1650n L=180.00n
+MM5 Y A GND GND n_18 W=1650n L=180.00n
+.ENDS
+
+************************************************************************
+* Library Name: lab
+* Cell Name:    static_cmos
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT static_cmos A B C D E F GND VDD Y
+*.PININFO A:I B:I C:I D:I E:I F:I GND:I VDD:I Y:O
+XI1 A B C GND VDD net8 / nand_3
+XI0 D E F GND VDD net1 / nand_3
+XI2 net8 net1 GND VDD Y / nor
+.ENDS
+

@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/ring_oscillator.dv
+dv_start matched                                  
+dv_cell {ring_oscillator} {ring_oscillator} matched
+dv_obj_count -transformed_nets {3 3} -transformed_inst {1 1} -transformed_port {3 3}
+dv_end

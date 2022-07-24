@@ -1,0 +1,67 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  lab1
+* Top Cell Name: decoder_2to4
+* View Name:     schematic
+* Netlisted on:  Mar 28 14:00:27 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: lab1
+* Cell Name:    inv
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inv GND VDD in out
+*.PININFO GND:I VDD:I in:I out:O
+MM5 out in GND GND n_18 W=500.0n L=180.00n
+MM4 out in VDD VDD p_18 W=1u L=180.00n
+.ENDS
+
+************************************************************************
+* Library Name: lab1
+* Cell Name:    nor_3
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT nor_3 A B C GND VDD Y
+*.PININFO A:I B:I C:I GND:I VDD:I Y:O
+MM2 Y C net1 VDD p_18 W=1u L=180.00n
+MM1 net1 B net4 VDD p_18 W=1u L=180.00n
+MM0 net4 A VDD VDD p_18 W=1u L=180.00n
+MM8 Y C GND GND n_18 W=500.0n L=180.00n
+MM6 Y B GND GND n_18 W=500.0n L=180.00n
+MM5 Y A GND GND n_18 W=500.0n L=180.00n
+.ENDS
+
+************************************************************************
+* Library Name: lab1
+* Cell Name:    decoder_2to4
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT decoder_2to4 EN GND VDD W0 W1 Y0 Y1 Y2 Y3
+*.PININFO EN:I GND:I VDD:I W0:I W1:I Y0:O Y1:O Y2:O Y3:O
+XI7 GND VDD EN net1 / inv
+XI1 GND VDD W0 net6 / inv
+XI0 GND VDD W1 net4 / inv
+XI2 W1 W0 net1 GND VDD Y0 / nor_3
+XI3 W1 net6 net1 GND VDD Y1 / nor_3
+XI4 net4 W0 net1 GND VDD Y2 / nor_3
+XI5 net4 net6 net1 GND VDD Y3 / nor_3
+.ENDS
+

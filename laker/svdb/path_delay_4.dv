@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/path_delay_4.dv
+dv_start matched                                  
+dv_cell {path_delay_4} {path_delay_4} matched
+dv_obj_count -transformed_nets {9 9} -transformed_inst {9 9} -transformed_port {4 4}
+dv_end

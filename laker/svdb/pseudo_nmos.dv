@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/pseudo_nmos.dv
+dv_start matched                                  
+dv_cell {pseudo_nmos} {pseudo_nmos} matched
+dv_obj_count -transformed_nets {12 12} -transformed_inst {10 10} -transformed_port {9 9}
+dv_end

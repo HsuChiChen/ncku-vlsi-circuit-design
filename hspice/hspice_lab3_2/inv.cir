@@ -1,0 +1,5 @@
+.SUBCKT inv vin GND VDD vout
+*.PININFO vin:I GND:I VDD:I vout:O
+MM1 vout vin VDD VDD p_18 W=3u L=180.00n
+MM2 vout vin GND GND n_18 W=1u L=180.00n
+.ENDS

@@ -1,0 +1,40 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  lab1
+* Top Cell Name: aoi31
+* View Name:     schematic
+* Netlisted on:  Mar 25 11:42:08 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: lab1
+* Cell Name:    aoi31
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT aoi31 A B C D GND VDD Y
+*.PININFO A:I B:I C:I D:I GND:I VDD:I Y:O
+MM3 Y D net1 VDD p_18 W=1u L=180.00n
+MM2 net1 C VDD VDD p_18 W=1u L=180.00n
+MM1 net1 B VDD VDD p_18 W=1u L=180.00n
+MM0 net1 A VDD VDD p_18 W=1u L=180.00n
+MM8 net3 C GND GND n_18 W=500.0n L=180.00n
+MM7 Y D GND GND n_18 W=500.0n L=180.00n
+MM6 net2 B net3 GND n_18 W=500.0n L=180.00n
+MM5 Y A net2 GND n_18 W=500.0n L=180.00n
+.ENDS
+

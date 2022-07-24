@@ -1,0 +1,29 @@
+* "simulator" "HSPICE" 
+* "version" "O-2018.09 linux64"
+* "format" "HSP"
+* "rundate" "18:00:17 05/26/2022 "
+* "netlist" "pseudo_nmos.sp "
+* "runtitle" "**testbench**"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   1.8000        
++ b =   1.8000        
++ c =   1.8000        
++ d =   1.8000        
++ e =   1.8000        
++ f =   0.            
++ net1 =   1.8000        
++ net2 =  11.8853n       
++ vdd =   1.8000        
++ y =  70.1649m       
++ xpseudo_nmos.net026 =  35.6198m       
++ xpseudo_nmos.net1 =  72.1680m       
++ xpseudo_nmos.net2 =  72.1680m       
++ xpseudo_nmos.net3 =   1.8000        
++ xpseudo_nmos.net_024 =   1.5615        
++ xpseudo_nmos.net_025 =  35.6198m       
+***   END: Saved Operating Point ***                     

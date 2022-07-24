@@ -1,0 +1,53 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  lab1
+* Top Cell Name: tristate_inv
+* View Name:     schematic
+* Netlisted on:  Mar 23 22:20:03 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: lab1
+* Cell Name:    inv
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inv GND VDD in out
+*.PININFO GND:I VDD:I in:I out:O
+MM5 out in GND GND n_18 W=500.0n L=180.00n
+MM4 out in VDD VDD p_18 W=1u L=180.00n
+.ENDS
+
+************************************************************************
+* Library Name: lab1
+* Cell Name:    tristate_inv
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT tristate_inv D0 D1 GND S VDD Y
+*.PININFO D0:I D1:I GND:I S:I VDD:I Y:O
+MM3 net15 D1 GND GND n_18 W=500.0n L=180.00n
+MM2 Y S net15 GND n_18 W=500.0n L=180.00n
+MM1 net17 D0 GND GND n_18 W=500.0n L=180.00n
+MM0 Y S_INV net17 GND n_18 W=500.0n L=180.00n
+MM7 net16 D1 VDD VDD p_18 W=1u L=180.00n
+MM6 Y S_INV net16 VDD p_18 W=1u L=180.00n
+MM5 net18 D0 VDD VDD p_18 W=1u L=180.00n
+MM4 Y S net18 VDD p_18 W=1u L=180.00n
+XI0 GND VDD S S_INV / inv
+.ENDS
+

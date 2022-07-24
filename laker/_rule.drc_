@@ -1,0 +1,27 @@
+//
+//  Rule file generated on Fri May 27 16:05:41 CST 2022
+//     by Calibre Interactive - DRC (v2016.4_15.11)
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH  "pseudo_nmos.calibre.db"
+LAYOUT PRIMARY "pseudo_nmos"
+LAYOUT SYSTEM GDSII
+
+DRC RESULTS DATABASE "pseudo_nmos.drc.results" ASCII 
+DRC MAXIMUM RESULTS 1000
+DRC MAXIMUM VERTEX 4096
+
+DRC CELL NAME YES CELL SPACE XFORM
+DRC SUMMARY REPORT "pseudo_nmos.drc.summary" REPLACE HIER
+
+VIRTUAL CONNECT COLON NO
+VIRTUAL CONNECT REPORT NO
+
+DRC ICSTATION YES
+
+
+INCLUDE "/home/ncku_class/vlsisj2022/vlsisj2022063/Desktop/vlsi/CIC_018/calibre/Calibre_DRC/rule.drc"
+

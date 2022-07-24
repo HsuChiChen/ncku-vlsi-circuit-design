@@ -1,0 +1,38 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  lab1
+* Top Cell Name: nmos_pmos_tran
+* View Name:     schematic
+* Netlisted on:  Mar 23 20:04:25 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: lab1
+* Cell Name:    nmos_pmos_tran
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT nmos_pmos_tran CLK GND VDD Vin Vout Vout_n Vout_p
+*.PININFO CLK:I GND:I VDD:I Vin:I Vout:O Vout_n:O Vout_p:O
+MM5 net1 CLK GND GND n_18 W=500.0n L=180.00n
+MM6 Vin CLK Vout GND n_18 W=1u L=180.00n
+MM0 Vin CLK Vout_n GND n_18 W=1u L=180.00n
+MM4 net1 CLK VDD VDD p_18 W=1u L=180.00n
+MM3 Vout net1 Vin VDD p_18 W=1u L=180.00n
+MM1 Vin CLK Vout_p VDD p_18 W=1u L=180.00n
+.ENDS
+

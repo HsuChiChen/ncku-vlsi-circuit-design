@@ -1,0 +1,12 @@
+.include 'inv.cir'
+
+.SUBCKT ring_oscillator vin GND VDD
+*.PININFO vin:I GND:I VDD:I
+Xinv1 vin GND VDD net1 inv
+Xinv2 net1 GND VDD net2 inv
+Xinv3 net2 GND VDD net3 inv
+Xinv4 net3 GND VDD net4 inv
+Xinv5 net4 GND VDD vin inv
+
+*.SUBCKT inv vin GND VDD vout
+.ENDS

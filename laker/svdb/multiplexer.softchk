@@ -1,0 +1,33 @@
+multiplexer 1000
+SOFTCHK PSUB LOWER.
+1 1 2 Mar 24 13:45:55 2022                                                      
+Net 10 is selected for stamping.
+Rejected nets: 2 7
+p 1 12
+CN multiplexer c 1 0 0 1 0 0
+DN 10
+2005 -2175
+11300 -2175
+11300 6255
+10300 6255
+10300 -465
+3005 -465
+3005 1540
+8140 1540
+8140 2405
+10300 2405
+10300 6255
+2005 6255
+SOFTCHK WEL LOWER.
+1 1 2 Mar 24 13:45:55 2022                                                      
+Net 9 is selected for stamping.
+Rejected nets: 1 6
+p 1 6
+CN multiplexer c 1 0 0 1 0 0
+DN 9
+3005 -465
+10300 -465
+10300 2405
+8140 2405
+8140 1540
+3005 1540

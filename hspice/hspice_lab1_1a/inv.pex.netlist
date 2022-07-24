@@ -1,0 +1,22 @@
+* File: inv.pex.netlist
+* Created: Wed Mar 23 15:28:51 2022
+* Program "Calibre xRC"
+* Version "v2016.4_15.11"
+* 
+.include "inv.pex.netlist.pex"
+.subckt inv  IN GND VDD OUT
+* 
+* OUT	OUT
+* VDD	VDD
+* GND	GND
+* IN	IN
+MM5 N_OUT_MM5_d N_IN_MM5_g N_GND_MM5_s N_GND_MM5_b N_18 L=1.8e-07 W=5e-07
++ AD=2.45e-13 AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+MM4 N_OUT_MM4_d N_IN_MM4_g N_VDD_MM4_s N_VDD_MM4_b P_18 L=1.8e-07 W=1e-06
++ AD=4.9e-13 AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+*
+.include "inv.pex.netlist.INV.pxi"
+*
+.ends
+*
+*

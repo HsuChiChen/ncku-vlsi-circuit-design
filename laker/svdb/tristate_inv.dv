@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/tristate_inv.dv
+dv_start matched                                  
+dv_cell {tristate_inv} {tristate_inv} matched
+dv_obj_count -transformed_nets {7 7} -transformed_inst {5 5} -transformed_port {6 6}
+dv_end

@@ -1,0 +1,59 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  lab1
+* Top Cell Name: multiplexer
+* View Name:     schematic
+* Netlisted on:  Mar 24 13:40:26 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: lab1
+* Cell Name:    inv
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inv GND VDD in out
+*.PININFO GND:I VDD:I in:I out:O
+MM5 out in GND GND n_18 W=500.0n L=180.00n
+MM4 out in VDD VDD p_18 W=1u L=180.00n
+.ENDS
+
+************************************************************************
+* Library Name: lab1
+* Cell Name:    tran_gate
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT tran_gate GND VDD down in out up
+*.PININFO GND:I VDD:I down:I in:I up:I out:O
+MM14 in up out GND n_18 W=1u L=180.00n
+MM11 out down in VDD p_18 W=1u L=180.00n
+.ENDS
+
+************************************************************************
+* Library Name: lab1
+* Cell Name:    multiplexer
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT multiplexer D0 D1 GND S VDD Y
+*.PININFO D0:I D1:I GND:I S:I VDD:I Y:O
+XI0 GND VDD S S_INV / inv
+XI2 GND VDD S D0 Y S_INV / tran_gate
+XI1 GND VDD S_INV D1 Y S / tran_gate
+.ENDS
+

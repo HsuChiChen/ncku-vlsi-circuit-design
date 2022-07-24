@@ -1,0 +1,77 @@
+* File: ring_oscillator.pex.netlist
+* Created: Mon May  9 21:57:26 2022
+* Program "Calibre xRC"
+* Version "v2016.4_15.11"
+* 
+.include "ring_oscillator.pex.netlist.pex"
+.subckt ring_oscillator  VIN GND VDD
+* 
+* VDD	VDD
+* GND	GND
+* VIN	VIN
+mXinv1/MM2 N_NET1_Xinv1/MM2_d N_VIN_Xinv1/MM2_g N_GND_Xinv1/MM2_s
++ N_GND_Xinv1/MM2_b N_18 L=1.8e-07 W=5e-07 AD=1.275e-13 AS=2.45e-13 PD=5.1e-07
++ PS=1.48e-06
+mXinv1/MM2@2 N_NET1_Xinv1/MM2@2_d N_VIN_Xinv1/MM2@2_g N_GND_Xinv1/MM2@2_s
++ N_GND_Xinv1/MM2_b N_18 L=1.8e-07 W=5e-07 AD=1.275e-13 AS=1.425e-13 PD=5.1e-07
++ PS=5.7e-07
+mXinv2/MM2 N_NET2_Xinv2/MM2_d N_NET1_Xinv2/MM2_g N_GND_Xinv2/MM2_s
++ N_GND_Xinv1/MM2_b N_18 L=1.8e-07 W=5e-07 AD=1.275e-13 AS=1.425e-13 PD=5.1e-07
++ PS=5.7e-07
+mXinv2/MM2@2 N_NET2_Xinv2/MM2@2_d N_NET1_Xinv2/MM2@2_g N_GND_Xinv2/MM2@2_s
++ N_GND_Xinv1/MM2_b N_18 L=1.8e-07 W=5e-07 AD=1.275e-13 AS=1.425e-13 PD=5.1e-07
++ PS=5.7e-07
+mXinv3/MM2 N_NET3_Xinv3/MM2_d N_NET2_Xinv3/MM2_g N_GND_Xinv3/MM2_s
++ N_GND_Xinv1/MM2_b N_18 L=1.8e-07 W=5e-07 AD=1.275e-13 AS=1.425e-13 PD=5.1e-07
++ PS=5.7e-07
+mXinv3/MM2@2 N_NET3_Xinv3/MM2@2_d N_NET2_Xinv3/MM2@2_g N_GND_Xinv3/MM2@2_s
++ N_GND_Xinv1/MM2_b N_18 L=1.8e-07 W=5e-07 AD=1.275e-13 AS=1.425e-13 PD=5.1e-07
++ PS=5.7e-07
+mXinv4/MM2 N_NET4_Xinv4/MM2_d N_NET3_Xinv4/MM2_g N_GND_Xinv4/MM2_s
++ N_GND_Xinv1/MM2_b N_18 L=1.8e-07 W=5e-07 AD=1.275e-13 AS=1.425e-13 PD=5.1e-07
++ PS=5.7e-07
+mXinv4/MM2@2 N_NET4_Xinv4/MM2@2_d N_NET3_Xinv4/MM2@2_g N_GND_Xinv4/MM2@2_s
++ N_GND_Xinv1/MM2_b N_18 L=1.8e-07 W=5e-07 AD=1.275e-13 AS=1.425e-13 PD=5.1e-07
++ PS=5.7e-07
+mXinv5/MM2 N_VIN_Xinv5/MM2_d N_NET4_Xinv5/MM2_g N_GND_Xinv5/MM2_s
++ N_GND_Xinv1/MM2_b N_18 L=1.8e-07 W=5e-07 AD=1.275e-13 AS=1.425e-13 PD=5.1e-07
++ PS=5.7e-07
+mXinv5/MM2@2 N_VIN_Xinv5/MM2@2_d N_NET4_Xinv5/MM2@2_g N_GND_Xinv5/MM2@2_s
++ N_GND_Xinv1/MM2_b N_18 L=1.8e-07 W=5e-07 AD=1.275e-13 AS=2.45e-13 PD=5.1e-07
++ PS=1.48e-06
+mXinv1/MM1 N_NET1_Xinv1/MM1_d N_VIN_Xinv1/MM1_g N_VDD_Xinv1/MM1_s
++ N_VDD_Xinv1/MM1_b P_18 L=1.8e-07 W=1.5e-06 AD=3.825e-13 AS=7.35e-13 PD=5.1e-07
++ PS=2.48e-06
+mXinv1/MM1@2 N_NET1_Xinv1/MM1@2_d N_VIN_Xinv1/MM1@2_g N_VDD_Xinv1/MM1@2_s
++ N_VDD_Xinv1/MM1_b P_18 L=1.8e-07 W=1.5e-06 AD=3.825e-13 AS=4.275e-13
++ PD=5.1e-07 PS=5.7e-07
+mXinv2/MM1 N_NET2_Xinv2/MM1_d N_NET1_Xinv2/MM1_g N_VDD_Xinv2/MM1_s
++ N_VDD_Xinv1/MM1_b P_18 L=1.8e-07 W=1.5e-06 AD=3.825e-13 AS=4.275e-13
++ PD=5.1e-07 PS=5.7e-07
+mXinv2/MM1@2 N_NET2_Xinv2/MM1@2_d N_NET1_Xinv2/MM1@2_g N_VDD_Xinv2/MM1@2_s
++ N_VDD_Xinv1/MM1_b P_18 L=1.8e-07 W=1.5e-06 AD=3.825e-13 AS=4.275e-13
++ PD=5.1e-07 PS=5.7e-07
+mXinv3/MM1 N_NET3_Xinv3/MM1_d N_NET2_Xinv3/MM1_g N_VDD_Xinv3/MM1_s
++ N_VDD_Xinv1/MM1_b P_18 L=1.8e-07 W=1.5e-06 AD=3.825e-13 AS=4.275e-13
++ PD=5.1e-07 PS=5.7e-07
+mXinv3/MM1@2 N_NET3_Xinv3/MM1@2_d N_NET2_Xinv3/MM1@2_g N_VDD_Xinv3/MM1@2_s
++ N_VDD_Xinv1/MM1_b P_18 L=1.8e-07 W=1.5e-06 AD=3.825e-13 AS=4.275e-13
++ PD=5.1e-07 PS=5.7e-07
+mXinv4/MM1 N_NET4_Xinv4/MM1_d N_NET3_Xinv4/MM1_g N_VDD_Xinv4/MM1_s
++ N_VDD_Xinv1/MM1_b P_18 L=1.8e-07 W=1.5e-06 AD=3.825e-13 AS=4.275e-13
++ PD=5.1e-07 PS=5.7e-07
+mXinv4/MM1@2 N_NET4_Xinv4/MM1@2_d N_NET3_Xinv4/MM1@2_g N_VDD_Xinv4/MM1@2_s
++ N_VDD_Xinv1/MM1_b P_18 L=1.8e-07 W=1.5e-06 AD=3.825e-13 AS=4.275e-13
++ PD=5.1e-07 PS=5.7e-07
+mXinv5/MM1 N_VIN_Xinv5/MM1_d N_NET4_Xinv5/MM1_g N_VDD_Xinv5/MM1_s
++ N_VDD_Xinv1/MM1_b P_18 L=1.8e-07 W=1.5e-06 AD=3.825e-13 AS=4.275e-13
++ PD=5.1e-07 PS=5.7e-07
+mXinv5/MM1@2 N_VIN_Xinv5/MM1@2_d N_NET4_Xinv5/MM1@2_g N_VDD_Xinv5/MM1@2_s
++ N_VDD_Xinv1/MM1_b P_18 L=1.8e-07 W=1.5e-06 AD=3.825e-13 AS=7.35e-13 PD=5.1e-07
++ PS=2.48e-06
+*
+.include "ring_oscillator.pex.netlist.RING_OSCILLATOR.pxi"
+*
+.ends
+*
+*

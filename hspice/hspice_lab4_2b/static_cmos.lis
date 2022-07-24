@@ -1,0 +1,128 @@
+ ****** PrimeSim HSPICE -- R-2020.12-SP2 linux64 (May 24 2021 7074677) ******
+  Copyright (c) 1986 - 2022 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: static_cmos.sp                                                    
+  Command line options: /cad/synopsys/hspice/2020.12-sp2/hspice/linux64/hspice -i static_cmos.sp -o static_cmos.lis
+  Start time: Wed Jun  1 00:21:12 2022
+ lic:  
+ lic: FLEXlm: SDK_12.9.5 
+ lic: USER:   vlsisj2022063        HOSTNAME: cic-svr 
+ lic: HOSTID: "90b11c16165c"       PID:      81251 
+ lic: Using FLEXlm license file: 
+ lic: 26585@lstn 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 14-may-2025/2021.09 
+ lic: 290(in_use)/300(total) FLOATING license(s) on SERVER 26585@lstn 
+ lic:   
+  **warning** (static_cmos.cir:18) Parameter name is not defined in .param. Please enter parameter variable with their respective value/expression.
+  **warning** (static_cmos.cir:42) Global net name "gnd" in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** PrimeSim HSPICE -- R-2020.12-SP2 linux64 (May 24 2021 7074677) ******
+ ******  
+ **testbench**
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xstatic_cmos.                   static_cmos        1.00 
+        2 xstatic_cmos.xi1.               nand_3             1.00 
+        3 xstatic_cmos.xi0.               nand_3             1.00 
+        4 xstatic_cmos.xi2.               nor                1.00 
+  **info** (static_cmos.sp:33) DC voltage reset to initial transient source value in source 0:vf. new dc=0.0000D+00
+ 
+
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=static_cmos.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ **testbench**
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:a       =   1.8000  0:b       =   1.8000  0:c       =   1.8000 
+ +0:d       =   1.8000  0:e       =   1.8000  0:f       =   0.     
+ +0:net1    =   1.8000  0:net2    =  11.8853n 0:vdd     =   1.8000 
+ +0:y       =   7.8607n 1:net1    =   1.8000  1:net8    =  54.5297n
+ +2:net1    =  36.3531n 2:net4    =  18.1766n 3:net1    =   1.5593 
+ +3:net4    =   1.5386  4:net4    = 397.7687m
+
+ ******
+ **testbench**
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ rising_delay= 179.0277p  targ= 920.2290n   trig= 920.0500n
+ falling_delay= 147.7541p  targ= 990.2978n   trig= 990.1500n
+ delay_avg= 163.3909p
+
+          ***** job concluded
+ ******  
+ **testbench**
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Xeon(R) CPU E7- 4820  @ 2.00GHz
+ cpu MHz	: 1994.981
+ CPU(s)		: 32
+  
+ OS:
+ Linux version 2.6.32-696.el6.x86_64 (mockbuild@c1bm.rdu2.centos.org) (gcc version 4.4.7 20120313 (Red Hat 4.4.7-18) (GCC) ) #1 SMP Tue Mar 21 19:29:05 UTC 2017
+
+ System loadavg : 8.51 10.19 10.98 10/5226 81254
+
+
+  ******  PrimeSim HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :    32
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      58 # elements   =      27
+  # resistors   =       0 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       7
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      20 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1          23
+  transient          0.19     2000001        2206         869 rev=        16
+  readin             0.02
+  errchk             0.01
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        434.25 megabytes
+           total cpu time            0.22 seconds
+           total elapsed time        0.57 seconds
+           job started at     00:21:12 06/01/2022
+           job ended   at     00:21:13 06/01/2022
+           job total runtime         0.57 seconds
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.34(s)
