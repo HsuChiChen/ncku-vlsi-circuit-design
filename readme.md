@@ -7,6 +7,9 @@ Time : 2022 spring (second half semester of junior)
 |:-:|:-:|
 |[VLSI電路設計](http://class-qry.acad.ncku.edu.tw/syllabus/online_display.php?syear=0110&sem=2&co_no=E246200)|[張順志](https://www.ee.ncku.edu.tw/teacher/index2.php?teacher_id=71)|
 
+## 作業分數
+![](img/1_0vlsi_homework_score.png)
+
 ## 環境
 另外還需要`rule.drc`的DRC檔、`Rule.lvs`的LVS檔、`Rule.rce`的PEX檔這3個layout規則檔與`cic018.l`製程檔。
 1. OS
